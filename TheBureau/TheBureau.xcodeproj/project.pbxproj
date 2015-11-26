@@ -23,6 +23,12 @@
 		78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2401C0720FE0013E9D2 /* UIColor+APColor.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2471C07210F0013E9D2 /* NSString+Encode.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE24A1C0721590013E9D2 /* BUUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE24D1C0721690013E9D2 /* BUConstants.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2531C07255C0013E9D2 /* BUSocialChannel.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2561C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE25E1C0728660013E9D2 /* FBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25B1C0728660013E9D2 /* FBController.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +70,6 @@
 		784622981C0718E500EA589C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		78FEE2311C071EAC0013E9D2 /* BUBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBaseViewController.h; sourceTree = "<group>"; };
 		78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBaseViewController.m; sourceTree = "<group>"; };
-		78FEE2341C071F9C0013E9D2 /* TheBureau.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheBureau.pch; sourceTree = "<group>"; };
 		78FEE2351C0720B60013E9D2 /* UIKit+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+Extensions.h"; sourceTree = "<group>"; };
 		78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+Extensions.m"; sourceTree = "<group>"; };
 		78FEE2371C0720B60013E9D2 /* Foundation+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Extensions.h"; sourceTree = "<group>"; };
@@ -75,6 +80,18 @@
 		78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CrossFade.m"; sourceTree = "<group>"; };
 		78FEE2461C07210F0013E9D2 /* NSString+Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encode.h"; sourceTree = "<group>"; };
 		78FEE2471C07210F0013E9D2 /* NSString+Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encode.m"; sourceTree = "<group>"; };
+		78FEE2491C0721590013E9D2 /* BUUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUUtilities.h; sourceTree = "<group>"; };
+		78FEE24A1C0721590013E9D2 /* BUUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUUtilities.m; sourceTree = "<group>"; };
+		78FEE24C1C0721690013E9D2 /* BUConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUConstants.h; sourceTree = "<group>"; };
+		78FEE24D1C0721690013E9D2 /* BUConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUConstants.m; sourceTree = "<group>"; };
+		78FEE2521C07255C0013E9D2 /* BUSocialChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSocialChannel.h; sourceTree = "<group>"; };
+		78FEE2531C07255C0013E9D2 /* BUSocialChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSocialChannel.m; sourceTree = "<group>"; };
+		78FEE2551C0726D20013E9D2 /* NSObject+FCKeyPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FCKeyPathHelper.h"; sourceTree = "<group>"; };
+		78FEE2561C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FCKeyPathHelper.m"; sourceTree = "<group>"; };
+		78FEE25A1C0728660013E9D2 /* FBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBController.h; sourceTree = "<group>"; };
+		78FEE25B1C0728660013E9D2 /* FBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBController.m; sourceTree = "<group>"; };
+		78FEE25C1C0728660013E9D2 /* FCBaseSocialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBaseSocialController.h; sourceTree = "<group>"; };
+		78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBaseSocialController.m; sourceTree = "<group>"; };
 		F1221E9735CB633F12051843 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +146,7 @@
 		7846225B1C0711E100EA589C /* TheBureau */ = {
 			isa = PBXGroup;
 			children = (
+				78FEE2501C07252D0013E9D2 /* ModelObjects */,
 				784622961C0718E500EA589C /* ViewControllers */,
 				784622921C0718B700EA589C /* ApplicationDelegate */,
 				7846229A1C07197E00EA589C /* Constants */,
@@ -136,6 +154,7 @@
 				7846229C1C07197E00EA589C /* Extensions */,
 				7846229D1C07197E00EA589C /* StoryBoards */,
 				7846229E1C07197E00EA589C /* Utilities */,
+				78FEE24F1C0721870013E9D2 /* ExternalLibraries */,
 				7846226B1C0711E100EA589C /* Assets.xcassets */,
 				784622701C0711E100EA589C /* Info.plist */,
 				784622681C0711E100EA589C /* TheBureau.xcdatamodeld */,
@@ -148,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				7846225D1C0711E100EA589C /* main.m */,
-				78FEE2341C071F9C0013E9D2 /* TheBureau.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				78FEE2301C071E090013E9D2 /* BaseViewController */,
+				78FEE2581C0728660013E9D2 /* SocialConnect */,
 				784622971C0718E500EA589C /* ViewController.h */,
 				784622981C0718E500EA589C /* ViewController.m */,
 			);
@@ -193,6 +212,8 @@
 		7846229A1C07197E00EA589C /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				78FEE24C1C0721690013E9D2 /* BUConstants.h */,
+				78FEE24D1C0721690013E9D2 /* BUConstants.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -207,6 +228,8 @@
 		7846229C1C07197E00EA589C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				78FEE2551C0726D20013E9D2 /* NSObject+FCKeyPathHelper.h */,
+				78FEE2561C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m */,
 				78FEE2451C07210F0013E9D2 /* NSStringExtenstions */,
 				78FEE23E1C0720FE0013E9D2 /* ColorFactory */,
 				78FEE2351C0720B60013E9D2 /* UIKit+Extensions.h */,
@@ -229,6 +252,8 @@
 		7846229E1C07197E00EA589C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				78FEE2491C0721590013E9D2 /* BUUtilities.h */,
+				78FEE24A1C0721590013E9D2 /* BUUtilities.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -260,6 +285,49 @@
 				78FEE2471C07210F0013E9D2 /* NSString+Encode.m */,
 			);
 			path = NSStringExtenstions;
+			sourceTree = "<group>";
+		};
+		78FEE24F1C0721870013E9D2 /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		78FEE2501C07252D0013E9D2 /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE2511C0725410013E9D2 /* SocialConnectModelObject */,
+			);
+			path = ModelObjects;
+			sourceTree = "<group>";
+		};
+		78FEE2511C0725410013E9D2 /* SocialConnectModelObject */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE2521C07255C0013E9D2 /* BUSocialChannel.h */,
+				78FEE2531C07255C0013E9D2 /* BUSocialChannel.m */,
+			);
+			path = SocialConnectModelObject;
+			sourceTree = "<group>";
+		};
+		78FEE2581C0728660013E9D2 /* SocialConnect */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE2591C0728660013E9D2 /* Facebook */,
+				78FEE25C1C0728660013E9D2 /* FCBaseSocialController.h */,
+				78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */,
+			);
+			path = SocialConnect;
+			sourceTree = "<group>";
+		};
+		78FEE2591C0728660013E9D2 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE25A1C0728660013E9D2 /* FBController.h */,
+				78FEE25B1C0728660013E9D2 /* FBController.m */,
+			);
+			path = Facebook;
 			sourceTree = "<group>";
 		};
 		C7629CC0C7EBCE97F3BA8191 /* Pods */ = {
@@ -448,11 +516,17 @@
 				78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */,
 				7846225E1C0711E100EA589C /* main.m in Sources */,
 				78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */,
+				78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */,
 				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
+				78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */,
 				78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */,
+				78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */,
 				784622991C0718E500EA589C /* ViewController.m in Sources */,
+				78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */,
 				78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */,
+				78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */,
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
+				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,
 				7846226A1C0711E100EA589C /* TheBureau.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

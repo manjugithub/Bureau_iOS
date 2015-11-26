@@ -18,6 +18,11 @@
 		784622951C0718B700EA589C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622941C0718B700EA589C /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		784622991C0718E500EA589C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622981C0718E500EA589C /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2381C0720B60013E9D2 /* Foundation+Extensions.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2401C0720FE0013E9D2 /* UIColor+APColor.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2471C07210F0013E9D2 /* NSString+Encode.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,16 @@
 		78FEE2311C071EAC0013E9D2 /* BUBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBaseViewController.h; sourceTree = "<group>"; };
 		78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBaseViewController.m; sourceTree = "<group>"; };
 		78FEE2341C071F9C0013E9D2 /* TheBureau.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheBureau.pch; sourceTree = "<group>"; };
+		78FEE2351C0720B60013E9D2 /* UIKit+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+Extensions.h"; sourceTree = "<group>"; };
+		78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+Extensions.m"; sourceTree = "<group>"; };
+		78FEE2371C0720B60013E9D2 /* Foundation+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+Extensions.h"; sourceTree = "<group>"; };
+		78FEE2381C0720B60013E9D2 /* Foundation+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Extensions.m"; sourceTree = "<group>"; };
+		78FEE23F1C0720FE0013E9D2 /* UIColor+APColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+APColor.h"; sourceTree = "<group>"; };
+		78FEE2401C0720FE0013E9D2 /* UIColor+APColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+APColor.m"; sourceTree = "<group>"; };
+		78FEE2411C0720FE0013E9D2 /* UIColor+CrossFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CrossFade.h"; sourceTree = "<group>"; };
+		78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CrossFade.m"; sourceTree = "<group>"; };
+		78FEE2461C07210F0013E9D2 /* NSString+Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encode.h"; sourceTree = "<group>"; };
+		78FEE2471C07210F0013E9D2 /* NSString+Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encode.m"; sourceTree = "<group>"; };
 		F1221E9735CB633F12051843 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +207,12 @@
 		7846229C1C07197E00EA589C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				78FEE2451C07210F0013E9D2 /* NSStringExtenstions */,
+				78FEE23E1C0720FE0013E9D2 /* ColorFactory */,
+				78FEE2351C0720B60013E9D2 /* UIKit+Extensions.h */,
+				78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */,
+				78FEE2371C0720B60013E9D2 /* Foundation+Extensions.h */,
+				78FEE2381C0720B60013E9D2 /* Foundation+Extensions.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +240,26 @@
 				78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		78FEE23E1C0720FE0013E9D2 /* ColorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE23F1C0720FE0013E9D2 /* UIColor+APColor.h */,
+				78FEE2401C0720FE0013E9D2 /* UIColor+APColor.m */,
+				78FEE2411C0720FE0013E9D2 /* UIColor+CrossFade.h */,
+				78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */,
+			);
+			path = ColorFactory;
+			sourceTree = "<group>";
+		};
+		78FEE2451C07210F0013E9D2 /* NSStringExtenstions */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE2461C07210F0013E9D2 /* NSString+Encode.h */,
+				78FEE2471C07210F0013E9D2 /* NSString+Encode.m */,
+			);
+			path = NSStringExtenstions;
 			sourceTree = "<group>";
 		};
 		C7629CC0C7EBCE97F3BA8191 /* Pods */ = {
@@ -404,9 +445,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				784622951C0718B700EA589C /* AppDelegate.m in Sources */,
+				78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */,
 				7846225E1C0711E100EA589C /* main.m in Sources */,
 				78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */,
+				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
+				78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */,
 				784622991C0718E500EA589C /* ViewController.m in Sources */,
+				78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */,
+				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				7846226A1C0711E100EA589C /* TheBureau.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

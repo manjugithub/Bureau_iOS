@@ -29,6 +29,7 @@
 		78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2561C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE25E1C0728660013E9D2 /* FBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25B1C0728660013E9D2 /* FBController.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */; settings = {ASSET_TAGS = (); }; };
+		78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		78FEE25B1C0728660013E9D2 /* FBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBController.m; sourceTree = "<group>"; };
 		78FEE25C1C0728660013E9D2 /* FCBaseSocialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBaseSocialController.h; sourceTree = "<group>"; };
 		78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBaseSocialController.m; sourceTree = "<group>"; };
+		78FEE2611C0739CD0013E9D2 /* BULoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BULoginViewController.h; sourceTree = "<group>"; };
+		78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULoginViewController.m; sourceTree = "<group>"; };
 		F1221E9735CB633F12051843 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +204,7 @@
 		784622961C0718E500EA589C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				78FEE2601C0739A60013E9D2 /* LoginViewController */,
 				78FEE2301C071E090013E9D2 /* BaseViewController */,
 				78FEE2581C0728660013E9D2 /* SocialConnect */,
 				784622971C0718E500EA589C /* ViewController.h */,
@@ -328,6 +332,15 @@
 				78FEE25B1C0728660013E9D2 /* FBController.m */,
 			);
 			path = Facebook;
+			sourceTree = "<group>";
+		};
+		78FEE2601C0739A60013E9D2 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78FEE2611C0739CD0013E9D2 /* BULoginViewController.h */,
+				78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */,
+			);
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 		C7629CC0C7EBCE97F3BA8191 /* Pods */ = {
@@ -524,6 +537,7 @@
 				784622991C0718E500EA589C /* ViewController.m in Sources */,
 				78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */,
 				78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */,
+				78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */,
 				78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */,
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,

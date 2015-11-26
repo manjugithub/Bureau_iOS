@@ -9,9 +9,20 @@
 #import "BULoginViewController.h"
 #import "FBController.h"
 #import "BUSocialChannel.h"
-
+#import "BUConstants.h"
 @interface BULoginViewController ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
+@property (assign, nonatomic) CGFloat layoutConstant;
+
+@property (weak, nonatomic) IBOutlet UITextField *emailTF,*passwordTF;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImageview;
+
+-(IBAction)loginUsingFacebook:(id)sender;
+-(IBAction)loginUsingEmail:(id)sender;
+
+-(IBAction)troubleinLoginButtonClicked:(id)sender;
+-(IBAction)forgotPasword:(id)sender;
 @end
 
 @implementation BULoginViewController
@@ -38,10 +49,10 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-//    [self performSelector:@selector(associateFacebook) withObject:nil afterDelay:2.0];
+    self.layoutConstant = self.overLayViewTapConstraint.constant;
 }
 
-#pragma - FACEBOOK -
+#pragma mark - FACEBOOK -
 -(void)associateFacebook
 {
     [[FBController sharedInstance]clearSession];
@@ -53,18 +64,48 @@
         }
     }];
 }
-
+#pragma mark - TextField Delegates
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
+    [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.overLayViewTapConstraint.constant = self.layoutConstant-kLoginTopLayoutOffset;
+    } completion:^(BOOL finished) {
+    }];
     return YES;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    
+    [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.overLayViewTapConstraint.constant = self.layoutConstant;
+    } completion:^(BOOL finished) {
+    }];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 {
+    [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.overLayViewTapConstraint.constant = self.layoutConstant;
+    } completion:^(BOOL finished) {
+    }];
     return YES;
+}
+#pragma mark - Action Methods
+
+-(IBAction)loginUsingFacebook:(id)sender
+{
+    [self associateFacebook];
+}
+-(IBAction)loginUsingEmail:(id)sender
+{
+    
+}
+
+-(IBAction)troubleinLoginButtonClicked:(id)sender
+{
+    
+}
+-(IBAction)forgotPasword:(id)sender
+{
+    
 }
 
 @end

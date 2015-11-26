@@ -9,7 +9,7 @@
 #import "BUSignUpViewController.h"
 #import "FBController.h"
 #import "BUSocialChannel.h"
-
+#import "BUConstants.h"
 @interface BUSignUpViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
 @property (assign, nonatomic) CGFloat layoutConstant;
@@ -65,22 +65,22 @@
 #pragma mark - TextField Delegates
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    [UIView animateWithDuration:0.5 animations:^{
-        self.overLayViewTapConstraint.constant = self.layoutConstant-80;
+    [UIView animateWithDuration:kAnimationDuration animations:^{
+        self.overLayViewTapConstraint.constant = self.layoutConstant-kSignupTopLayoutOffset;
     } completion:^(BOOL finished) {
     }];
     return YES;
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:kAnimationDuration animations:^{
         self.overLayViewTapConstraint.constant = self.layoutConstant;
     } completion:^(BOOL finished) {
     }];
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField;
 {
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:kAnimationDuration animations:^{
         self.overLayViewTapConstraint.constant = self.layoutConstant;
     } completion:^(BOOL finished) {
     }];

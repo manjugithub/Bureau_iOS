@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BUConstants : NSObject
+#define kLoginTopLayoutOffset 130
 
-@end
+#define kSignupTopLayoutOffset 80
+
+#define kAnimationDuration 0.5

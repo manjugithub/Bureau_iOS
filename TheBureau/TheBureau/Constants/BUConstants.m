@@ -8,6 +8,4 @@
 
 #import "BUConstants.h"
 
-@implementation BUConstants
 
-@end

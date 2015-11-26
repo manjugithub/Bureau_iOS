@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "FBController.h"
+#import "BUSocialChannel.h"
 @interface ViewController ()
 
 @end
@@ -24,4 +25,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self performSelector:@selector(associateFacebook) withObject:nil afterDelay:2.0];
+}
+
+
+#pragma - FACEBOOK -
+-(void)associateFacebook
+{
+    [[FBController sharedInstance]clearSession];
+    [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
+        if (!error) {
+            
+        }else{
+            [[FBController sharedInstance]clearSession];
+        }
+    }];
+}
 @end

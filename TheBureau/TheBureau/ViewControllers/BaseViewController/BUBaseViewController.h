@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BUBaseViewController.h
 //  TheBureau
 //
 //  Created by Manjunath on 26/11/15.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BUBaseViewController.h"
-@interface ViewController : BUBaseViewController
 
+@interface BUBaseViewController : UIViewController
 
 @end
-

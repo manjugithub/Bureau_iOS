@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
 		698EA826EC5D060CB3D2F628 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FF08703B9A2468AB539B6 /* libPods.a */; };
 		7846225E1C0711E100EA589C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846225D1C0711E100EA589C /* main.m */; };
 		784622671C0711E100EA589C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784622651C0711E100EA589C /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		7846227A1C0711E100EA589C /* TheBureauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622791C0711E100EA589C /* TheBureauTests.m */; };
 		784622851C0711E100EA589C /* TheBureauUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622841C0711E100EA589C /* TheBureauUITests.m */; };
 		784622951C0718B700EA589C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622941C0718B700EA589C /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		784622991C0718E500EA589C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622981C0718E500EA589C /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */; settings = {ASSET_TAGS = (); }; };
 		78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2381C0720B60013E9D2 /* Foundation+Extensions.m */; settings = {ASSET_TAGS = (); }; };
@@ -50,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1808029B1C079E7B00F5AEE5 /* BUSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSignUpViewController.h; sourceTree = "<group>"; };
+		1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSignUpViewController.m; sourceTree = "<group>"; };
 		6502757F3F1ACF97331C1C80 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		660FF08703B9A2468AB539B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		784622591C0711E100EA589C /* TheBureau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBureau.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,8 +69,6 @@
 		784622861C0711E100EA589C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		784622931C0718B700EA589C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		784622941C0718B700EA589C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		784622971C0718E500EA589C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		784622981C0718E500EA589C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		78FEE2311C071EAC0013E9D2 /* BUBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBaseViewController.h; sourceTree = "<group>"; };
 		78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUBaseViewController.m; sourceTree = "<group>"; };
 		78FEE2351C0720B60013E9D2 /* UIKit+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+Extensions.h"; sourceTree = "<group>"; };
@@ -124,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1808029A1C079E5E00F5AEE5 /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1808029B1C079E7B00F5AEE5 /* BUSignUpViewController.h */,
+				1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */,
+			);
+			path = SignUpViewController;
+			sourceTree = "<group>";
+		};
 		784622501C0711E100EA589C = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +178,8 @@
 		7846225C1C0711E100EA589C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7846226D1C0711E100EA589C /* LaunchScreen.storyboard */,
+				784622651C0711E100EA589C /* Main.storyboard */,
 				7846225D1C0711E100EA589C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -204,11 +215,10 @@
 		784622961C0718E500EA589C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1808029A1C079E5E00F5AEE5 /* SignUpViewController */,
 				78FEE2601C0739A60013E9D2 /* LoginViewController */,
 				78FEE2301C071E090013E9D2 /* BaseViewController */,
 				78FEE2581C0728660013E9D2 /* SocialConnect */,
-				784622971C0718E500EA589C /* ViewController.h */,
-				784622981C0718E500EA589C /* ViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -247,8 +257,6 @@
 		7846229D1C07197E00EA589C /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				7846226D1C0711E100EA589C /* LaunchScreen.storyboard */,
-				784622651C0711E100EA589C /* Main.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -532,9 +540,9 @@
 				78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */,
 				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
 				78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */,
+				1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */,
 				78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */,
 				78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */,
-				784622991C0718E500EA589C /* ViewController.m in Sources */,
 				78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */,
 				78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */,
 				78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */,
@@ -583,7 +591,6 @@
 				784622661C0711E100EA589C /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		7846226D1C0711E100EA589C /* LaunchScreen.storyboard */ = {
@@ -592,7 +599,6 @@
 				7846226E1C0711E100EA589C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

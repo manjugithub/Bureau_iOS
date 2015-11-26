@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BUBaseViewController : UIViewController
-
+@interface BUBaseViewController : UIViewController<UITextFieldDelegate>
+@property(nonatomic, weak) IBOutlet UILabel *navigationTitleLabel;
+-(IBAction)navigateBack:(id)sender;
 @end

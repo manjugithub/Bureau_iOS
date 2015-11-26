@@ -7,6 +7,8 @@
 //
 
 #import "BULoginViewController.h"
+#import "FBController.h"
+#import "BUSocialChannel.h"
 
 @interface BULoginViewController ()
 
@@ -33,5 +35,36 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)viewDidAppear:(BOOL)animated
+{
+//    [self performSelector:@selector(associateFacebook) withObject:nil afterDelay:2.0];
+}
+
+#pragma - FACEBOOK -
+-(void)associateFacebook
+{
+    [[FBController sharedInstance]clearSession];
+    [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
+        if (!error) {
+            
+        }else{
+            [[FBController sharedInstance]clearSession];
+        }
+    }];
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+{
+    return YES;
+}
 
 @end

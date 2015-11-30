@@ -46,9 +46,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)viewWillAppear:(BOOL)animated{
+    
+    self.navigationController.navigationBarHidden = YES;
 
+    
+}
 -(void)viewDidAppear:(BOOL)animated
 {
+
     self.layoutConstant = self.overLayViewTapConstraint.constant;
 }
 
@@ -101,11 +107,14 @@
 
 -(IBAction)troubleinLoginButtonClicked:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"trouble login" sender:self];
 }
 -(IBAction)forgotPasword:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"forgot password" sender:self];
 }
+
+
+
 
 @end

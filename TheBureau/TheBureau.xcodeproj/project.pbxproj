@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5B2A2CAB1C0CD68B006F3845 /* BUTroubleInlLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAA1C0CD68B006F3845 /* BUTroubleInlLoginVC.m */; settings = {ASSET_TAGS = (); }; };
+		5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */; settings = {ASSET_TAGS = (); }; };
 		698EA826EC5D060CB3D2F628 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FF08703B9A2468AB539B6 /* libPods.a */; };
 		7846225E1C0711E100EA589C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846225D1C0711E100EA589C /* main.m */; };
 		784622671C0711E100EA589C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784622651C0711E100EA589C /* Main.storyboard */; };
@@ -52,6 +54,10 @@
 /* Begin PBXFileReference section */
 		1808029B1C079E7B00F5AEE5 /* BUSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSignUpViewController.h; sourceTree = "<group>"; };
 		1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSignUpViewController.m; sourceTree = "<group>"; };
+		5B2A2CA91C0CD68B006F3845 /* BUTroubleInlLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUTroubleInlLoginVC.h; sourceTree = "<group>"; };
+		5B2A2CAA1C0CD68B006F3845 /* BUTroubleInlLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUTroubleInlLoginVC.m; sourceTree = "<group>"; };
+		5B2A2CAC1C0CE72B006F3845 /* BUForgotPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUForgotPasswordVC.h; sourceTree = "<group>"; };
+		5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUForgotPasswordVC.m; sourceTree = "<group>"; };
 		6502757F3F1ACF97331C1C80 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		660FF08703B9A2468AB539B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		784622591C0711E100EA589C /* TheBureau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBureau.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -347,6 +353,10 @@
 			children = (
 				78FEE2611C0739CD0013E9D2 /* BULoginViewController.h */,
 				78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */,
+				5B2A2CA91C0CD68B006F3845 /* BUTroubleInlLoginVC.h */,
+				5B2A2CAA1C0CD68B006F3845 /* BUTroubleInlLoginVC.m */,
+				5B2A2CAC1C0CE72B006F3845 /* BUForgotPasswordVC.h */,
+				5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -544,11 +554,13 @@
 				78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */,
 				78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */,
 				78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */,
+				5B2A2CAB1C0CD68B006F3845 /* BUTroubleInlLoginVC.m in Sources */,
 				78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */,
 				78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */,
 				78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */,
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,
+				5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */,
 				7846226A1C0711E100EA589C /* TheBureau.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

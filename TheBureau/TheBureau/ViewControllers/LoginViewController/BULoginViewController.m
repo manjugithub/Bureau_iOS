@@ -21,8 +21,6 @@
 -(IBAction)loginUsingFacebook:(id)sender;
 -(IBAction)loginUsingEmail:(id)sender;
 
--(IBAction)troubleinLoginButtonClicked:(id)sender;
--(IBAction)forgotPasword:(id)sender;
 @end
 
 @implementation BULoginViewController
@@ -105,14 +103,6 @@
     
 }
 
--(IBAction)troubleinLoginButtonClicked:(id)sender
-{
-    [self performSegueWithIdentifier:@"trouble login" sender:self];
-}
--(IBAction)forgotPasword:(id)sender
-{
-    [self performSegueWithIdentifier:@"forgot password" sender:self];
-}
 
 
 

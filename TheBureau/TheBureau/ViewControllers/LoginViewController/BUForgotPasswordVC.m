@@ -16,12 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Forgot Password";
-    
-    self.navigationController.navigationBarHidden = NO;
-    
-    self.navigationController.navigationBar.backItem.title = @" ";
-
     // Do any additional setup after loading the view.
 }
 

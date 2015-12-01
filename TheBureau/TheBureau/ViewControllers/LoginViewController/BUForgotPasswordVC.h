@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BUBaseViewController.h"
 
-@interface BUForgotPasswordVC : UIViewController
+@interface BUForgotPasswordVC : BUBaseViewController
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BUBaseViewController.h"
 
-@interface BUTroubleInlLoginVC : UIViewController
+@interface BUTroubleInlLoginVC : BUBaseViewController
 
 @end

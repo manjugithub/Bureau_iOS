@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BUBaseViewController.h"
 
-@interface BUTroubleInlLoginVC : BUBaseViewController
+@interface BUTroubleInLoginVC : BUBaseViewController<UITextFieldDelegate,UITextViewDelegate>
 
 @end

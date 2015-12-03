@@ -1,28 +1,28 @@
 //
-//  BUForgotPasswordVC.m
+//  BUTroubleInlLoginVC.m
 //  TheBureau
 //
 //  Created by Accion Labs on 01/12/15.
 //  Copyright © 2015 Bureau. All rights reserved.
 //
 
-#import "BUForgotPasswordVC.h"
+#import "BUTroubleInLoginVC.h"
 
-@interface BUForgotPasswordVC ()
-@property(nonatomic,weak) IBOutlet UITextField *forgotEmailIdTF;
+@interface BUTroubleInLoginVC ()
+
+@property(nonatomic,weak) IBOutlet UITextField *fullNameTF;
+@property(nonatomic,weak) IBOutlet UITextField *emailIdTF;
+@property(nonatomic,weak) IBOutlet UITextField *mobileNumTF;
+@property(nonatomic,weak) IBOutlet UITextView  *messageTV;
+
 
 
 @end
 
-@implementation BUForgotPasswordVC
+@implementation BUTroubleInLoginVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
-    self.forgotEmailIdTF.leftViewMode = UITextFieldViewModeAlways;
-    self.forgotEmailIdTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_email_mobile"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +35,18 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 /*
 #pragma mark - Navigation

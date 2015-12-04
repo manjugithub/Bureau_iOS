@@ -62,7 +62,7 @@
     [[FBController sharedInstance]clearSession];
     [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
         if (!error) {
-            
+            [self performSegueWithIdentifier:@"account creation" sender:self];
         }else{
             [[FBController sharedInstance]clearSession];
         }

@@ -23,6 +23,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.fullNameTF.leftViewMode = UITextFieldViewModeAlways;
+    self.fullNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
+    
+    self.fullNameTF.layer.sublayerTransform = CATransform3DMakeTranslation(0, 0, 30);
+    
+
+    self.emailIdTF.leftViewMode = UITextFieldViewModeAlways;
+    self.emailIdTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_email"]];
+    
+    self.mobileNumTF.leftViewMode = UITextFieldViewModeAlways;
+    self.mobileNumTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_mobile"]];
 }
 
 - (void)didReceiveMemoryWarning {

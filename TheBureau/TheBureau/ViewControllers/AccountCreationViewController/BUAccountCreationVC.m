@@ -10,6 +10,13 @@
 
 @interface BUAccountCreationVC ()
 
+
+@property(nonatomic,weak) IBOutlet UITextField *firstNameTF;
+@property(nonatomic,weak) IBOutlet UITextField *lastNameTF;
+
+@property(nonatomic,weak) IBOutlet UITextField *emailIdTF;
+@property(nonatomic,weak) IBOutlet UITextField *mobileNumTF;
+
 @end
 
 @implementation BUAccountCreationVC

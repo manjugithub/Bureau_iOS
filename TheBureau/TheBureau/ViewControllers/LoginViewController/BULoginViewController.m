@@ -100,7 +100,7 @@
 }
 -(IBAction)loginUsingEmail:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"account creation" sender:self];
 }
 
 

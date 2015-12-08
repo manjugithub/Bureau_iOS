@@ -1175,6 +1175,12 @@
                             <constraint firstItem="EpI-yA-0ne" firstAttribute="leading" secondItem="ZQ1-to-zvZ" secondAttribute="trailing" constant="9" id="yTm-0y-Mp7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailIdTF" destination="SUF-4J-Rp8" id="Hxd-H2-gSC"/>
+                        <outlet property="firstNameTF" destination="UXg-PE-LqA" id="Wwd-Er-DHA"/>
+                        <outlet property="lastNameTF" destination="X5h-VN-uHy" id="dKl-RX-yW2"/>
+                        <outlet property="mobileNumTF" destination="kLT-ZZ-RoX" id="3xY-sK-5We"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmr-u2-Svq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

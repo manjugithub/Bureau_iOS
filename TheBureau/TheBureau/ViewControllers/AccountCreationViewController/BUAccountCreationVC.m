@@ -16,6 +16,8 @@
 
 @property(nonatomic,weak) IBOutlet UITextField *emailIdTF;
 @property(nonatomic,weak) IBOutlet UITextField *mobileNumTF;
+@property(nonatomic,weak) IBOutlet UITextField *dateofbirthTF;
+
 
 @end
 

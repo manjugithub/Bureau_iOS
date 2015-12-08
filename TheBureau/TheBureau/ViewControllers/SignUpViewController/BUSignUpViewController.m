@@ -56,7 +56,7 @@
     [[FBController sharedInstance]clearSession];
     [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
         if (!error) {
-            
+            [self performSegueWithIdentifier:@"ShowAccount" sender:self];
         }else{
             [[FBController sharedInstance]clearSession];
         }
@@ -96,7 +96,7 @@
 }
 -(IBAction)signupUsingEmail:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"ShowAccount" sender:self];
 }
 
 @end

@@ -9,6 +9,12 @@
 #import "AppDelegate.h"
 #import "FBController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+#import <DigitsKit/DigitsKit.h>
+
+
+
 
 @interface AppDelegate ()
 
@@ -19,6 +25,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Fabric with:@[[Crashlytics class],[DigitsKit class]]];
+    
+    
+    
+  
    [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     

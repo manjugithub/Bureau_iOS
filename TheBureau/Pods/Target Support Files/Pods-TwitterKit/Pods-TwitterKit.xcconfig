@@ -1,2 +1,0 @@
-PODS_TWITTERKIT_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/TwitterKit"
-PODS_TWITTERKIT_OTHER_LDFLAGS = -framework "CoreData" -framework "CoreGraphics" -framework "CoreText" -framework "Foundation" -framework "MediaPlayer" -framework "QuartzCore" -framework "Security" -framework "TwitterKit" -framework "UIKit"

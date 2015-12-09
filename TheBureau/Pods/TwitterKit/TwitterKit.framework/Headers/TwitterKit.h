@@ -16,11 +16,9 @@
 #else
 #import <Accounts/Accounts.h>
 #import <Foundation/Foundation.h>
-#import <MediaPlayer/MediaPlayer.h>
 #import <Social/Social.h>
-#import <TwitterCore/TwitterCore.h>
 #import <UIKit/UIKit.h>
-
+#import <TwitterCore/TwitterCore.h>
 #if __has_include(<DigitsKit/DigitsKit.h>)
 #import <DigitsKit/DigitsKit.h>
 #endif

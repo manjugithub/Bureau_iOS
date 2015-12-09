@@ -25,6 +25,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    self.firstNameTF.leftViewMode = UITextFieldViewModeAlways;
+    self.firstNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
+    
+    self.firstNameTF.layer.sublayerTransform = CATransform3DMakeTranslation(0, 0, 30);
+    
+    self.lastNameTF.leftViewMode = UITextFieldViewModeAlways;
+    self.lastNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
+    
+    self.emailIdTF.leftViewMode = UITextFieldViewModeAlways;
+    self.emailIdTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_email"]];
+    
+    self.mobileNumTF.leftViewMode = UITextFieldViewModeAlways;
+    self.mobileNumTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_mobile"]];
+    
+    self.dateofbirthTF.leftViewMode = UITextFieldViewModeAlways;
+    self.dateofbirthTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_dob"]];
+
+
     // Do any additional setup after loading the view.
 }
 

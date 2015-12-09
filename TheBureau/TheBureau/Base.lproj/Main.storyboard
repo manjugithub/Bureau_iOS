@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MSY-MB-doS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MSY-MB-doS">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -80,6 +81,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="Fbz-lT-rJS">
                                 <rect key="frame" x="225" y="60" width="150" height="150"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="NDX-Ea-p7n"/>
                                     <constraint firstAttribute="width" constant="150" id="dTU-t2-AMy"/>
@@ -180,6 +182,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="5ZS-YX-yX6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXd-4H-O6h">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -280,6 +283,7 @@
                                     </label>
                                     <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krz-uG-bHa">
                                         <rect key="frame" x="25" y="349" width="550" height="1"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.61568627450000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="9b9-IJ-cjL"/>
@@ -288,6 +292,7 @@
                                     </view>
                                     <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZM-Pw-d8X">
                                         <rect key="frame" x="25" y="387" width="550" height="1"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.61568627450000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Pfk-pc-yTh"/>
@@ -297,6 +302,7 @@
                                     </view>
                                     <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCA-1h-imu">
                                         <rect key="frame" x="25" y="425" width="550" height="1"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.61568627450000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Q4A-wZ-SLN"/>
@@ -429,6 +435,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hY6-5a-Bjw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQH-kx-Mxm">
                                 <rect key="frame" x="20" y="20" width="560" height="36"/>
@@ -450,6 +457,7 @@
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="7R4-Qa-9t8">
                                         <rect key="frame" x="215" y="70" width="150" height="150"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="XRU-5Y-8Ak"/>
                                             <constraint firstAttribute="width" constant="150" id="m64-ZJ-XXf"/>
@@ -577,6 +585,7 @@
                                     </button>
                                     <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMD-AY-lim">
                                         <rect key="frame" x="25" y="329" width="550" height="1"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.61568627450000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Dyr-1k-pQ6"/>
@@ -584,6 +593,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgo-Xr-0mV">
                                         <rect key="frame" x="25" y="367" width="550" height="1"/>
+                                        <animations/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.61568627450000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="AzF-d0-tWh"/>
@@ -917,7 +927,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Id Or Mobile Num" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-19-Wle">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Email Id Or Mobile Num" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-19-Wle">
                                 <rect key="frame" x="54" y="142" width="492" height="30"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1057,7 +1067,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-PE-LqA">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-PE-LqA">
                                 <rect key="frame" x="81" y="167" width="438" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -1074,7 +1084,7 @@
                                     <constraint firstAttribute="height" constant="1" id="XO0-eL-FNb"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5h-VN-uHy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5h-VN-uHy">
                                 <rect key="frame" x="81" y="219" width="438" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -1091,7 +1101,7 @@
                                     <constraint firstAttribute="height" constant="1" id="xjp-x6-Ekg"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUF-4J-Rp8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUF-4J-Rp8">
                                 <rect key="frame" x="81" y="269" width="438" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -1108,7 +1118,7 @@
                                     <constraint firstAttribute="height" constant="1" id="D33-OR-Hdh"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLT-ZZ-RoX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" enter mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLT-ZZ-RoX">
                                 <rect key="frame" x="81" y="321" width="438" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -1125,7 +1135,7 @@
                                     <constraint firstAttribute="height" constant="1" id="vnY-TW-Ygj"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcP-wY-8y9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcP-wY-8y9">
                                 <rect key="frame" x="81" y="372" width="438" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -1192,6 +1202,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQt-1o-eOe">
                                         <rect key="frame" x="8" y="18" width="26" height="30"/>
+                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="26" id="7OP-gY-Bmi"/>
                                             <constraint firstAttribute="height" constant="30" id="fja-G3-hxN"/>
@@ -1281,6 +1292,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateofbirthTF" destination="hcP-wY-8y9" id="gMu-Xa-ADM"/>
                         <outlet property="emailIdTF" destination="SUF-4J-Rp8" id="Hxd-H2-gSC"/>
                         <outlet property="firstNameTF" destination="UXg-PE-LqA" id="Wwd-Er-DHA"/>
                         <outlet property="lastNameTF" destination="X5h-VN-uHy" id="dKl-RX-yW2"/>

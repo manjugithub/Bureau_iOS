@@ -10,6 +10,7 @@
 #import "FBController.h"
 #import "BUSocialChannel.h"
 #import "BUConstants.h"
+#import "BUAuthButton.h"
 #import <DigitsKit/DigitsKit.h>
 @interface BULoginViewController ()
 
@@ -18,6 +19,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTF,*passwordTF;
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageview;
+@property (weak, nonatomic) IBOutlet BUAuthButton *loginBtn;
+@property (strong, nonatomic) DGTAppearance *theme;
+@property (strong, nonatomic) DGTAuthenticationConfiguration *configuration;
 
 -(IBAction)loginUsingFacebook:(id)sender;
 -(IBAction)loginUsingEmail:(id)sender;
@@ -28,29 +32,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    _theme = [[DGTAppearance alloc] init];
+//    _theme.bodyFont = [UIFont fontWithName:@"Comfortaa-Bold" size:16];
+//    _theme.labelFont = [UIFont fontWithName:@"Comfortaa-Bold" size:17];
+//    _theme.accentColor = [UIColor colorWithRed:(213.0/255.0) green:(15/255.0) blue:(37/255.0) alpha:1];
+//    _theme.backgroundColor = [UIColor whiteColor];
+//    _theme.logoImage = [UIImage imageNamed:@"logo_splash"];
     
-    DGTAuthenticateButton *authButton;
-    authButton = [DGTAuthenticateButton buttonWithAuthenticationCompletion:^(DGTSession *session, NSError *error) {
-        if (session.userID) {
-            // TODO: associate the session userID with your user model
-            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
-                                                            message:msg
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-        } else if (error) {
-            NSLog(@"Authentication error: %@", error.localizedDescription);
-        }
-    }];
-    authButton.center = self.view.center;
-    authButton.backgroundColor = [UIColor colorWithRed:(213.0/255.0) green:(15/255.0) blue:(37/255.0) alpha:1];
-    authButton.digitsAppearance = [self makeTheme];
+    
+    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
+    _configuration.appearance = [self makeTheme];
 
-    [self.view addSubview:authButton];
-
-    // Do any additional setup after loading the view.
 }
 
 - (DGTAppearance *)makeTheme {
@@ -86,8 +78,8 @@
 }
 -(void)viewDidAppear:(BOOL)animated
 {
-
-    self.layoutConstant = self.overLayViewTapConstraint.constant;
+  //  [self.loginBtn setupButtonThemeWithTitle:@"Login Using Phonenumber"];
+//    self.layoutConstant = self.overLayViewTapConstraint.constant;
 }
 
 #pragma mark - FACEBOOK -
@@ -135,6 +127,25 @@
 -(IBAction)loginUsingEmail:(id)sender
 {
     [self performSegueWithIdentifier:@"account creation" sender:self];
+}
+
+-(IBAction)loginUsingPhonenum:(id)sender{
+    
+    [[Digits sharedInstance]authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
+        if (session.userID) {
+            // TODO: associate the session userID with your user model
+            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
+                                                            message:msg
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        } else if (error) {
+            NSLog(@"Authentication error: %@", error.localizedDescription);
+        }
+    }];
+
 }
 
 

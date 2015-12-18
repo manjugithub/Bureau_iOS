@@ -10,6 +10,7 @@
 #import "FBController.h"
 #import "BUSocialChannel.h"
 #import "BUConstants.h"
+#import <DigitsKit/DigitsKit.h>
 @interface BUSignUpViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
 @property (assign, nonatomic) CGFloat layoutConstant;
@@ -17,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTF,*passwordTF,*confirmPaswordTF;
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageview;
+@property (strong, nonatomic) DGTAuthenticationConfiguration *configuration;
+
 
 -(IBAction)signupUsingFacebook:(id)sender;
 -(IBAction)signupUsingEmail:(id)sender;
@@ -28,7 +31,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
+    _configuration.appearance = [self makeTheme];
+    
 }
+
+- (DGTAppearance *)makeTheme {
+    DGTAppearance *theme = [[DGTAppearance alloc] init];
+    theme.bodyFont = [UIFont fontWithName:@"Comfortaa-Bold" size:16];
+    theme.labelFont = [UIFont fontWithName:@"Comfortaa-Bold" size:17];
+    theme.accentColor = [UIColor colorWithRed:(213.0/255.0) green:(15/255.0) blue:(37/255.0) alpha:1];
+    theme.backgroundColor = [UIColor whiteColor];
+    theme.logoImage = [UIImage imageNamed:@"logo_splash"];
+    return theme;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -97,6 +116,25 @@
 -(IBAction)signupUsingEmail:(id)sender
 {
     [self performSegueWithIdentifier:@"ShowAccount" sender:self];
+}
+
+-(IBAction)signUpUsingPhonenum:(id)sender{
+    
+    [[Digits sharedInstance]authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
+        if (session.userID) {
+            // TODO: associate the session userID with your user model
+            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
+                                                            message:msg
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        } else if (error) {
+            NSLog(@"Authentication error: %@", error.localizedDescription);
+        }
+    }];
+    
 }
 
 @end

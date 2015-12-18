@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
+		5B0AEDC61C22B94A00877C24 /* BULoginWithEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDC51C22B94A00877C24 /* BULoginWithEmailVC.m */; settings = {ASSET_TAGS = (); }; };
+		5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDC81C22C69D00877C24 /* BUAuthButton.m */; settings = {ASSET_TAGS = (); }; };
+		5B0AEDCC1C23591400877C24 /* BUSignUpWithEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDCB1C23591400877C24 /* BUSignUpWithEmailVC.m */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CAB1C0CD68B006F3845 /* BUTroubleInLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CB41C182D7D006F3845 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */; settings = {ASSET_TAGS = (); }; };
+		5BDA47201C22596200C875AB /* BURootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA471F1C22596200C875AB /* BURootViewController.m */; settings = {ASSET_TAGS = (); }; };
 		698EA826EC5D060CB3D2F628 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FF08703B9A2468AB539B6 /* libPods.a */; };
 		7846225E1C0711E100EA589C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846225D1C0711E100EA589C /* main.m */; };
 		784622671C0711E100EA589C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784622651C0711E100EA589C /* Main.storyboard */; };
@@ -62,6 +66,12 @@
 /* Begin PBXFileReference section */
 		1808029B1C079E7B00F5AEE5 /* BUSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSignUpViewController.h; sourceTree = "<group>"; };
 		1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSignUpViewController.m; sourceTree = "<group>"; };
+		5B0AEDC41C22B94A00877C24 /* BULoginWithEmailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BULoginWithEmailVC.h; sourceTree = "<group>"; };
+		5B0AEDC51C22B94A00877C24 /* BULoginWithEmailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BULoginWithEmailVC.m; sourceTree = "<group>"; };
+		5B0AEDC71C22C69D00877C24 /* BUAuthButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUAuthButton.h; path = TheBureau/ViewControllers/LoginViewController/BUAuthButton.h; sourceTree = SOURCE_ROOT; };
+		5B0AEDC81C22C69D00877C24 /* BUAuthButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUAuthButton.m; path = TheBureau/ViewControllers/LoginViewController/BUAuthButton.m; sourceTree = SOURCE_ROOT; };
+		5B0AEDCA1C23591400877C24 /* BUSignUpWithEmailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSignUpWithEmailVC.h; sourceTree = "<group>"; };
+		5B0AEDCB1C23591400877C24 /* BUSignUpWithEmailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSignUpWithEmailVC.m; sourceTree = "<group>"; };
 		5B2A2CA91C0CD68B006F3845 /* BUTroubleInLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUTroubleInLoginVC.h; sourceTree = "<group>"; };
 		5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUTroubleInLoginVC.m; sourceTree = "<group>"; };
 		5B2A2CAC1C0CE72B006F3845 /* BUForgotPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUForgotPasswordVC.h; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DigitsKit.framework; path = Pods/DigitsKit.framework; sourceTree = SOURCE_ROOT; };
 		5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = Pods/DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = Pods/TwitterKit/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		5BDA471E1C22596200C875AB /* BURootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BURootViewController.h; sourceTree = "<group>"; };
+		5BDA471F1C22596200C875AB /* BURootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BURootViewController.m; sourceTree = "<group>"; };
 		6502757F3F1ACF97331C1C80 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		660FF08703B9A2468AB539B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		784622591C0711E100EA589C /* TheBureau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBureau.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +165,20 @@
 			children = (
 				1808029B1C079E7B00F5AEE5 /* BUSignUpViewController.h */,
 				1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */,
+				5B0AEDCA1C23591400877C24 /* BUSignUpWithEmailVC.h */,
+				5B0AEDCB1C23591400877C24 /* BUSignUpWithEmailVC.m */,
 			);
 			path = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		5BDA471D1C2258CA00C875AB /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA471E1C22596200C875AB /* BURootViewController.h */,
+				5BDA471F1C22596200C875AB /* BURootViewController.m */,
+			);
+			name = RootViewController;
+			path = SocialConnect;
 			sourceTree = "<group>";
 		};
 		784622501C0711E100EA589C = {
@@ -246,6 +270,7 @@
 				1808029A1C079E5E00F5AEE5 /* SignUpViewController */,
 				78FEE2601C0739A60013E9D2 /* LoginViewController */,
 				78FEE2301C071E090013E9D2 /* BaseViewController */,
+				5BDA471D1C2258CA00C875AB /* RootViewController */,
 				78FEE2581C0728660013E9D2 /* SocialConnect */,
 			);
 			path = ViewControllers;
@@ -263,6 +288,8 @@
 		7846229B1C07197E00EA589C /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				5B0AEDC71C22C69D00877C24 /* BUAuthButton.h */,
+				5B0AEDC81C22C69D00877C24 /* BUAuthButton.m */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -413,6 +440,8 @@
 			children = (
 				78FEE2611C0739CD0013E9D2 /* BULoginViewController.h */,
 				78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */,
+				5B0AEDC41C22B94A00877C24 /* BULoginWithEmailVC.h */,
+				5B0AEDC51C22B94A00877C24 /* BULoginWithEmailVC.m */,
 				5B2A2CA91C0CD68B006F3845 /* BUTroubleInLoginVC.h */,
 				5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */,
 				5B2A2CAC1C0CE72B006F3845 /* BUForgotPasswordVC.h */,
@@ -641,8 +670,10 @@
 			files = (
 				784622951C0718B700EA589C /* AppDelegate.m in Sources */,
 				78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */,
+				5B0AEDCC1C23591400877C24 /* BUSignUpWithEmailVC.m in Sources */,
 				7846225E1C0711E100EA589C /* main.m in Sources */,
 				78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */,
+				5BDA47201C22596200C875AB /* BURootViewController.m in Sources */,
 				78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */,
 				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
 				78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */,
@@ -657,7 +688,9 @@
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,
 				5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */,
+				5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */,
 				78F4A9411C0CD3F4001C76A6 /* BUAccountCreationVC.m in Sources */,
+				5B0AEDC61C22B94A00877C24 /* BULoginWithEmailVC.m in Sources */,
 				7846226A1C0711E100EA589C /* TheBureau.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

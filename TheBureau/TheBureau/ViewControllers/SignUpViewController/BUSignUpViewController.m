@@ -32,7 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
+//    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
+  //  _configuration.appearance = [self makeTheme];
+    
+    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsEmail];
+    
     _configuration.appearance = [self makeTheme];
     
 }
@@ -120,17 +124,31 @@
 
 -(IBAction)signUpUsingPhonenum:(id)sender{
     
-    [[Digits sharedInstance]authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
-        if (session.userID) {
-            // TODO: associate the session userID with your user model
-            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
-                                                            message:msg
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-        } else if (error) {
+//    [[Digits sharedInstance]authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
+//        if (session.userID) {
+//            // TODO: associate the session userID with your user model
+//            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
+//                                                            message:msg
+//                                                           delegate:nil
+//                                                  cancelButtonTitle:@"OK"
+//                                                  otherButtonTitles:nil];
+//            [alert show];
+//        } else if (error) {
+//            NSLog(@"Authentication error: %@", error.localizedDescription);
+//        }
+//    }];
+    
+    [[Digits sharedInstance] authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
+        if (session) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // TODO: associate the session userID with your user model
+                NSString *message = [NSString stringWithFormat:@"Email address: %@, phone number: %@", session.emailAddress, session.phoneNumber];
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"You are logged in!" message:message preferredStyle:UIAlertControllerStyleAlert];
+                [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+                [self presentViewController:alertController animated:YES completion:nil];
+            });
+        } else {
             NSLog(@"Authentication error: %@", error.localizedDescription);
         }
     }];

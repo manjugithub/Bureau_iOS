@@ -32,15 +32,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    _theme = [[DGTAppearance alloc] init];
-//    _theme.bodyFont = [UIFont fontWithName:@"Comfortaa-Bold" size:16];
-//    _theme.labelFont = [UIFont fontWithName:@"Comfortaa-Bold" size:17];
-//    _theme.accentColor = [UIColor colorWithRed:(213.0/255.0) green:(15/255.0) blue:(37/255.0) alpha:1];
-//    _theme.backgroundColor = [UIColor whiteColor];
-//    _theme.logoImage = [UIImage imageNamed:@"logo_splash"];
-    
-    
-//    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
     _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsEmail];
 
     _configuration.appearance = [self makeTheme];

@@ -614,7 +614,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Pods/Fabric.framework/run 8761ef7408ba35916fe36c49067b96d6b6efb3ba a327e5abd4f5eebc33831c77535043bb03e26f8a22e86e08f33a9440a1b2f33a";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8761ef7408ba35916fe36c49067b96d6b6efb3ba a327e5abd4f5eebc33831c77535043bb03e26f8a22e86e08f33a9440a1b2f33a";
 		};
 		5E9A9E5DA447DD85DB124022 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -771,7 +771,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -793,6 +794,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "dd6b734a-d4f8-409e-8ad5-385133aab2f6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -815,7 +817,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -830,6 +833,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "dd6b734a-d4f8-409e-8ad5-385133aab2f6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -841,7 +845,8 @@
 			baseConfigurationReference = 6502757F3F1ACF97331C1C80 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Manjunath HS (C3YKE3ST27)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods",
@@ -849,9 +854,9 @@
 				INFOPLIST_FILE = TheBureau/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fastacash.XPressMoney;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theBureau;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ba141356-fda3-47f0-8a5b-705cc879bd28";
+				PROVISIONING_PROFILE = "dd6b734a-d4f8-409e-8ad5-385133aab2f6";
 			};
 			name = Debug;
 		};
@@ -860,7 +865,8 @@
 			baseConfigurationReference = F1221E9735CB633F12051843 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Manjunath HS (C3YKE3ST27)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anand Narayan (SF5D5Q4E55)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods",
@@ -868,9 +874,9 @@
 				INFOPLIST_FILE = TheBureau/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fastacash.XPressMoney;
+				PRODUCT_BUNDLE_IDENTIFIER = com.theBureau;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ba141356-fda3-47f0-8a5b-705cc879bd28";
+				PROVISIONING_PROFILE = "dd6b734a-d4f8-409e-8ad5-385133aab2f6";
 			};
 			name = Release;
 		};

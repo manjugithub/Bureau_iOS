@@ -15,6 +15,7 @@
 		5B1628871C4CFE400034FA33 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628861C4CFE400034FA33 /* UIImage+animatedGIF.m */; settings = {ASSET_TAGS = (); }; };
 		5B16288D1C4D04B80034FA33 /* TheBureau_Splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288C1C4D04B80034FA33 /* TheBureau_Splash.gif */; settings = {ASSET_TAGS = (); }; };
 		5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288E1C4D252A0034FA33 /* ALLURA-REGULAR.TTF */; settings = {ASSET_TAGS = (); }; };
+		5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628911C4F63D10034FA33 /* BUProfileDetails.m */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CAB1C0CD68B006F3845 /* BUTroubleInLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */; settings = {ASSET_TAGS = (); }; };
 		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; settings = {ASSET_TAGS = (); }; };
@@ -82,6 +83,8 @@
 		5B1628861C4CFE400034FA33 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		5B16288C1C4D04B80034FA33 /* TheBureau_Splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TheBureau_Splash.gif; sourceTree = "<group>"; };
 		5B16288E1C4D252A0034FA33 /* ALLURA-REGULAR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ALLURA-REGULAR.TTF"; sourceTree = "<group>"; };
+		5B1628901C4F63D10034FA33 /* BUProfileDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileDetails.h; sourceTree = "<group>"; };
+		5B1628911C4F63D10034FA33 /* BUProfileDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileDetails.m; sourceTree = "<group>"; };
 		5B2A2CA91C0CD68B006F3845 /* BUTroubleInLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUTroubleInLoginVC.h; sourceTree = "<group>"; };
 		5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUTroubleInLoginVC.m; sourceTree = "<group>"; };
 		5B2A2CAC1C0CE72B006F3845 /* BUForgotPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUForgotPasswordVC.h; sourceTree = "<group>"; };
@@ -436,6 +439,8 @@
 			children = (
 				78FEE2521C07255C0013E9D2 /* BUSocialChannel.h */,
 				78FEE2531C07255C0013E9D2 /* BUSocialChannel.m */,
+				5B1628901C4F63D10034FA33 /* BUProfileDetails.h */,
+				5B1628911C4F63D10034FA33 /* BUProfileDetails.m */,
 			);
 			path = SocialConnectModelObject;
 			sourceTree = "<group>";
@@ -714,6 +719,7 @@
 				78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */,
 				78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */,
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
+				5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */,
 				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,
 				5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */,
 				5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */,

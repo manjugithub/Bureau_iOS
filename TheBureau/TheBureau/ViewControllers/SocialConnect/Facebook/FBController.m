@@ -61,10 +61,10 @@
         UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
         [self.loginManager logInWithReadPermissions:self.permissionsRequired fromViewController:root handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
             
-            if (!error) {
-                
+//            if (!error) {
+            
                 // Fetching publish permission
-                [self.loginManager logInWithPublishPermissions:@[@"publish_actions"] fromViewController:root handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+//                [self.loginManager logInWithPublishPermissions:@[@"publish_actions"] fromViewController:root handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
                     if (!error)
                     {
                         if ([FBSDKAccessToken currentAccessToken]) {
@@ -77,11 +77,11 @@
                     {
                         completion(nil, error, false);
                     }
-                }];
-            }
-            else {
-                completion(nil, error, false);
-            }
+//                }];
+//            }
+//            else {
+//                completion(nil, error, false);
+//            }
         }];
     }
 }
@@ -126,6 +126,7 @@
             BUSocialChannel *socialChannel = [[BUSocialChannel alloc] init];
             socialChannel.profileId = [result valueForKeyPathFC:@"id"];
             socialChannel.profile = result;
+            socialChannel.profileDetails = [[BUProfileDetails alloc] initWithProfileDetails:result];
             socialChannel.credentials = @{@"accessToken":[FBSDKAccessToken currentAccessToken]};
             socialChannel.socialType = BUSocialChannelFacebook;
             

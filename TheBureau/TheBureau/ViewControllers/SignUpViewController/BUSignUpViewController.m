@@ -10,7 +10,9 @@
 #import "FBController.h"
 #import "BUSocialChannel.h"
 #import "BUConstants.h"
+#import "BUAccountCreationVC.h"
 #import <DigitsKit/DigitsKit.h>
+
 @interface BUSignUpViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
 @property (assign, nonatomic) CGFloat layoutConstant;
@@ -19,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTF,*passwordTF,*confirmPaswordTF;
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageview;
 @property (strong, nonatomic) DGTAuthenticationConfiguration *configuration;
+@property(nonatomic) eNavigatedFrom navFrom;
+
 
 
 -(IBAction)signupUsingFacebook:(id)sender;
@@ -79,7 +83,15 @@
     [[FBController sharedInstance]clearSession];
     [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
         if (!error) {
-            [self performSegueWithIdentifier:@"ShowAccount" sender:self];
+            self.navFrom = eNavFromFb;
+            
+            UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
+            vc.socialChannel = socialChannel;
+            
+            [self.navigationController pushViewController:vc animated:YES];
+          // [self performSegueWithIdentifier:@"ShowAccount" sender:self];
+          //  [self.navigationController pu ]
         }else{
             [[FBController sharedInstance]clearSession];
         }

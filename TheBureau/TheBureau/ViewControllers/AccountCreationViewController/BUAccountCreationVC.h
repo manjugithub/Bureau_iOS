@@ -7,7 +7,9 @@
 //
 
 #import "BUBaseViewController.h"
+#import "BUSocialChannel.h"
 
 @interface BUAccountCreationVC : BUBaseViewController
 
+@property(nonatomic, strong) BUSocialChannel *socialChannel;
 @end

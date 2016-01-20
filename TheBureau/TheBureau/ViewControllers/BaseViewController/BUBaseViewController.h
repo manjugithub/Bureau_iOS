@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    eNavFromFb,
+    eNavFromEmail,
+    eNavFromPhoneNumber
+   } eNavigatedFrom;
+
 @interface BUBaseViewController : UIViewController<UITextFieldDelegate>
 @property(nonatomic, weak) IBOutlet UILabel *navigationTitleLabel;
 -(IBAction)navigateBack:(id)sender;

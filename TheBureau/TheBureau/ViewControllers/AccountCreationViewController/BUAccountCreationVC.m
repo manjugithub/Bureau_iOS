@@ -18,6 +18,7 @@
 @property(nonatomic,weak) IBOutlet UITextField *mobileNumTF;
 @property(nonatomic,weak) IBOutlet UITextField *dateofbirthTF;
 
+@property(nonatomic) eNavigatedFrom navFrom;
 
 @end
 
@@ -44,8 +45,24 @@
     self.dateofbirthTF.leftViewMode = UITextFieldViewModeAlways;
     self.dateofbirthTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_dob"]];
 
+    
 
     // Do any additional setup after loading the view.
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+
+    
+    self.firstNameTF.text = self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @"";
+    self.lastNameTF.text = self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @"";
+    self.emailIdTF.text = @"";//self.socialChannel.profileDetails.firstName;
+    self.mobileNumTF.text = @"";// self.socialChannel.profileDetails.firstName;
+    self.dateofbirthTF.text = self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @"";
+    
 }
 
 - (void)didReceiveMemoryWarning {

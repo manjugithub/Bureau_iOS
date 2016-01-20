@@ -1321,7 +1321,7 @@
         <!--Account CreationVC-->
         <scene sceneID="Z7N-WG-b72">
             <objects>
-                <viewController id="fZs-4K-Y51" customClass="BUAccountCreationVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountCreationVC" id="fZs-4K-Y51" customClass="BUAccountCreationVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Zf-ec-atk"/>
                         <viewControllerLayoutGuide type="bottom" id="Aay-Yc-ZRU"/>

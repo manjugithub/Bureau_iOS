@@ -19,7 +19,8 @@
 @property(nonatomic,weak) IBOutlet UITextField *dateofbirthTF;
 
 @property(nonatomic) eNavigatedFrom navFrom;
-
+-(IBAction)setGender:(id)sender;
+-(IBAction)setDOB:(id)sender;
 @end
 
 @implementation BUAccountCreationVC
@@ -59,8 +60,8 @@
     
     self.firstNameTF.text = self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @"";
     self.lastNameTF.text = self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @"";
-    self.emailIdTF.text = @"";//self.socialChannel.profileDetails.firstName;
-    self.mobileNumTF.text = @"";// self.socialChannel.profileDetails.firstName;
+    self.emailIdTF.text = self.socialChannel.emailID;
+    self.mobileNumTF.text = self.socialChannel.mobileNumber;
     self.dateofbirthTF.text = self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @"";
     
 }
@@ -79,5 +80,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(IBAction)setGender:(id)sender
+{
+    
+}
+-(IBAction)setDOB:(id)sender
+{
+    
+}
 
 @end

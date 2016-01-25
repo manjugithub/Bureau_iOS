@@ -14,7 +14,34 @@ typedef enum {
     eNavFromPhoneNumber
    } eNavigatedFrom;
 
+
+typedef enum {
+    eLoginFromFB,
+    eLoginFromDigit
+} eLoginType;
+
+
+typedef enum {
+    eRegistrationFromFB,
+    eRegistrationFromDigit
+} eRegistrationType;
+
+
 @interface BUBaseViewController : UIViewController<UITextFieldDelegate>
 @property(nonatomic, weak) IBOutlet UILabel *navigationTitleLabel;
 -(IBAction)navigateBack:(id)sender;
+
+/** Returns YES if the activity indicator is being shown
+ */
+- (BOOL) isShowingActivityIndicator;
+
+/** Starts the activity indicator
+ */
+- (void)startActivityIndicator:(BOOL)isWhite;
+
+/** Stops the activity indicator
+ */
+- (void)stopActivityIndicator;
+- (void)startCustomActivityIndicator:(BOOL)isWhite;
+- (void)stopCustomActivityIndicator;
 @end

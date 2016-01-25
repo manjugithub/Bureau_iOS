@@ -87,11 +87,6 @@
         if (!error) {
             self.navFrom = eNavFromFb;
             self.socialChannel = socialChannel;
-            UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
-            vc.socialChannel = socialChannel;
-            
-            [self.navigationController pushViewController:vc animated:YES];
         }else{
             [[FBController sharedInstance]clearSession];
         }
@@ -181,16 +176,37 @@
 {
     [self stopActivityIndicator];
 
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Successful" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-    [self presentViewController:alertController animated:YES completion:nil];
-
+    if(YES == [[inResult valueForKey:@"msg"] isEqualToString:@"Success"])
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Successful" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction *action)
+                                   {
+                                       UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                                       BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
+                                       vc.socialChannel = self.socialChannel;
+                                       [self.navigationController pushViewController:vc animated:YES];
+                                   }];
+        
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+        
+    }
+    else
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Failed" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    
 }
 
 -(void)didFail:(id)inResult;
 {
     [self stopActivityIndicator];
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Successful" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Failed" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];
 }

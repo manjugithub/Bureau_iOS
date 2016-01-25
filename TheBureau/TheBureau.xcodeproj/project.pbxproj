@@ -47,7 +47,6 @@
 		78F4A92A1C0CCC11001C76A6 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */; };
 		78F4A92B1C0CCC11001C76A6 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */; };
 		78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */; };
-		78F4A93C1C0CD382001C76A6 /* AccountCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A93A1C0CD382001C76A6 /* AccountCreation.storyboard */; };
 		78F4A9411C0CD3F4001C76A6 /* BUAccountCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F4A9401C0CD3F4001C76A6 /* BUAccountCreationVC.m */; };
 		78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */; };
 		78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */; };
@@ -140,7 +139,6 @@
 		78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
-		78F4A93B1C0CD382001C76A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AccountCreation.storyboard; sourceTree = "<group>"; };
 		78F4A93F1C0CD3F4001C76A6 /* BUAccountCreationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUAccountCreationVC.h; sourceTree = "<group>"; };
 		78F4A9401C0CD3F4001C76A6 /* BUAccountCreationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUAccountCreationVC.m; sourceTree = "<group>"; };
 		78FEE2311C071EAC0013E9D2 /* BUBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUBaseViewController.h; sourceTree = "<group>"; };
@@ -276,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				5B16288C1C4D04B80034FA33 /* TheBureau_Splash.gif */,
-				78F4A9391C0CD333001C76A6 /* Sotryboards */,
 				78F4A9261C0CCC11001C76A6 /* Fonts */,
 				7846226D1C0711E100EA589C /* LaunchScreen.storyboard */,
 				784622651C0711E100EA589C /* Main.storyboard */,
@@ -398,14 +395,6 @@
 			);
 			name = Fonts;
 			path = Resources/Fonts;
-			sourceTree = "<group>";
-		};
-		78F4A9391C0CD333001C76A6 /* Sotryboards */ = {
-			isa = PBXGroup;
-			children = (
-				78F4A93A1C0CD382001C76A6 /* AccountCreation.storyboard */,
-			);
-			name = Sotryboards;
 			sourceTree = "<group>";
 		};
 		78F4A93D1C0CD3DB001C76A6 /* AccountCreationViewController */ = {
@@ -655,7 +644,6 @@
 				7846226F1C0711E100EA589C /* LaunchScreen.storyboard in Resources */,
 				7846226C1C0711E100EA589C /* Assets.xcassets in Resources */,
 				784622671C0711E100EA589C /* Main.storyboard in Resources */,
-				78F4A93C1C0CD382001C76A6 /* AccountCreation.storyboard in Resources */,
 				78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */,
 				78B5B71C1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */,
 				5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */,
@@ -835,14 +823,6 @@
 				7846226E1C0711E100EA589C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		78F4A93A1C0CD382001C76A6 /* AccountCreation.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78F4A93B1C0CD382001C76A6 /* Base */,
-			);
-			name = AccountCreation.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

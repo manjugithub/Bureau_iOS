@@ -28,7 +28,7 @@
     dispatch_once(&once, ^{
         instance = [[FBController alloc] init];
         instance.loginManager = [[FBSDKLoginManager alloc] init];
-        instance.permissionsRequired = @[@"public_profile",@"user_activities",@"user_friends", @"user_about_me"];
+        instance.permissionsRequired = @[@"public_profile",@"user_activities",@"user_friends", @"user_about_me",@"email",@"birthday"];
     });
     return instance;
 }
@@ -116,9 +116,9 @@
 - (void) fetchDetailsWithCompletionHandler:(void(^)(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated))completion whetherAlreadyAuthenticated:(BOOL)whetherAlreadyAuthenticated
 {
     
-    FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"id, name, email, first_name, last_name, location, gender, birthday, locale, timezone, updated_time"}];
+    FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters: @{@"fields": @"id, name, email, first_name, last_name, location, gender, birthday, locale, timezone, updated_time"}];
    
-    
+//    @{@"fields": @"id, name, email, first_name, last_name, location, gender, birthday, locale, timezone, updated_time"}
     [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
         if (!error) {
             // Success! Include your code to handle the results here

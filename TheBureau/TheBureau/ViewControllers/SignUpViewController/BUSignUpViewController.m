@@ -13,6 +13,8 @@
 #import "BUAccountCreationVC.h"
 #import <DigitsKit/DigitsKit.h>
 
+
+
 @interface BUSignUpViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
 @property (assign, nonatomic) CGFloat layoutConstant;
@@ -84,14 +86,12 @@
     [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
         if (!error) {
             self.navFrom = eNavFromFb;
-            
+            self.socialChannel = socialChannel;
             UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
             BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
             vc.socialChannel = socialChannel;
             
             [self.navigationController pushViewController:vc animated:YES];
-          // [self performSegueWithIdentifier:@"ShowAccount" sender:self];
-          //  [self.navigationController pu ]
         }else{
             [[FBController sharedInstance]clearSession];
         }
@@ -127,6 +127,7 @@
 
 -(IBAction)signupUsingFacebook:(id)sender
 {
+    self.registrationType = eRegistrationFromFB;
     [self associateFacebook];
 }
 -(IBAction)signupUsingEmail:(id)sender
@@ -136,35 +137,61 @@
 
 -(IBAction)signUpUsingPhonenum:(id)sender{
     
-//    [[Digits sharedInstance]authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
-//        if (session.userID) {
-//            // TODO: associate the session userID with your user model
-//            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
-//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
-//                                                            message:msg
-//                                                           delegate:nil
-//                                                  cancelButtonTitle:@"OK"
-//                                                  otherButtonTitles:nil];
-//            [alert show];
-//        } else if (error) {
-//            NSLog(@"Authentication error: %@", error.localizedDescription);
-//        }
-//    }];
-    
+    self.registrationType = eRegistrationFromDigit;
+    [self regiserWithDigits];
+}
+
+-(void)regiserWithDigits
+{
     [[Digits sharedInstance] authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
         if (session) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 // TODO: associate the session userID with your user model
-                NSString *message = [NSString stringWithFormat:@"Email address: %@, phone number: %@", session.emailAddress, session.phoneNumber];
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"You are logged in!" message:message preferredStyle:UIAlertControllerStyleAlert];
-                [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-                [self presentViewController:alertController animated:YES completion:nil];
+                
+                if(nil == self.socialChannel)
+                    self.socialChannel = [[BUSocialChannel alloc] init];
+
+                self.socialChannel.mobileNumber = session.phoneNumber;
+                self.socialChannel.emailID = session.emailAddress;
+                
+                NSDictionary *parameters = nil;
+                
+                if(self.registrationType == eRegistrationFromFB)
+                {
+                   parameters =  @{@"reg_type": @"fb",
+                      @"digits":session.phoneNumber,
+                                   @"fb_id":self.socialChannel.profileDetails.fbID};
+                }
+                else
+                {
+                    parameters =  @{@"reg_type": @"digits",
+                                    @"digits":session.phoneNumber};
+                }
+                [self startActivityIndicator:YES];
+                
+                [[BUWebServicesManager sharedManager] signUpWithDelegeate:self parameters:parameters];
             });
         } else {
             NSLog(@"Authentication error: %@", error.localizedDescription);
         }
     }];
-    
 }
 
+-(void)didSuccess:(id)inResult;
+{
+    [self stopActivityIndicator];
+
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Successful" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+
+}
+
+-(void)didFail:(id)inResult;
+{
+    [self stopActivityIndicator];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Registration Successful" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 @end

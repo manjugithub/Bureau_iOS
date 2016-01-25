@@ -23,6 +23,8 @@ typedef enum BUSocialChannel
 }
 
 @property (nonatomic,strong)NSString *channelName;
+@property (nonatomic,strong)NSString *emailID;
+@property (nonatomic,strong)NSString *mobileNumber;
 @property (nonatomic,assign)BOOL isAssociated;
 
 @property (nonatomic, assign) BOOL isPreferred;

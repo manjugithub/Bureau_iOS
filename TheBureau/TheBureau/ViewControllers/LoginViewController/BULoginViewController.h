@@ -7,7 +7,11 @@
 //
 
 #import "BUBaseViewController.h"
+#import "BUWebServicesManager.h"
+#import "BUSocialChannel.h"
+@interface BULoginViewController : BUBaseViewController<BUWebServicesCallBack>
 
-@interface BULoginViewController : BUBaseViewController
+@property(nonatomic, strong) BUSocialChannel *socialChannel;
+@property(nonatomic, assign) eLoginType loginType;
 
 @end

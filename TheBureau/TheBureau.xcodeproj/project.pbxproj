@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
-		5B0AEDC61C22B94A00877C24 /* BULoginWithEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDC51C22B94A00877C24 /* BULoginWithEmailVC.m */; settings = {ASSET_TAGS = (); }; };
-		5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDC81C22C69D00877C24 /* BUAuthButton.m */; settings = {ASSET_TAGS = (); }; };
-		5B0AEDCC1C23591400877C24 /* BUSignUpWithEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDCB1C23591400877C24 /* BUSignUpWithEmailVC.m */; settings = {ASSET_TAGS = (); }; };
-		5B1628841C4CFA620034FA33 /* BUSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628831C4CFA620034FA33 /* BUSplashViewController.m */; settings = {ASSET_TAGS = (); }; };
-		5B1628871C4CFE400034FA33 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628861C4CFE400034FA33 /* UIImage+animatedGIF.m */; settings = {ASSET_TAGS = (); }; };
-		5B16288D1C4D04B80034FA33 /* TheBureau_Splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288C1C4D04B80034FA33 /* TheBureau_Splash.gif */; settings = {ASSET_TAGS = (); }; };
-		5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288E1C4D252A0034FA33 /* ALLURA-REGULAR.TTF */; settings = {ASSET_TAGS = (); }; };
-		5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628911C4F63D10034FA33 /* BUProfileDetails.m */; settings = {ASSET_TAGS = (); }; };
-		5B2A2CAB1C0CD68B006F3845 /* BUTroubleInLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */; settings = {ASSET_TAGS = (); }; };
-		5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */; settings = {ASSET_TAGS = (); }; };
-		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; settings = {ASSET_TAGS = (); }; };
-		5B2A2CB41C182D7D006F3845 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */; settings = {ASSET_TAGS = (); }; };
-		5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */; settings = {ASSET_TAGS = (); }; };
-		5BDA47201C22596200C875AB /* BURootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA471F1C22596200C875AB /* BURootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808029C1C079E7B00F5AEE5 /* BUSignUpViewController.m */; };
+		5B0AEDC61C22B94A00877C24 /* BULoginWithEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDC51C22B94A00877C24 /* BULoginWithEmailVC.m */; };
+		5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDC81C22C69D00877C24 /* BUAuthButton.m */; };
+		5B0AEDCC1C23591400877C24 /* BUSignUpWithEmailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AEDCB1C23591400877C24 /* BUSignUpWithEmailVC.m */; };
+		5B1628841C4CFA620034FA33 /* BUSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628831C4CFA620034FA33 /* BUSplashViewController.m */; };
+		5B1628871C4CFE400034FA33 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628861C4CFE400034FA33 /* UIImage+animatedGIF.m */; };
+		5B16288D1C4D04B80034FA33 /* TheBureau_Splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288C1C4D04B80034FA33 /* TheBureau_Splash.gif */; };
+		5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288E1C4D252A0034FA33 /* ALLURA-REGULAR.TTF */; };
+		5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628911C4F63D10034FA33 /* BUProfileDetails.m */; };
+		5B2A2CAB1C0CD68B006F3845 /* BUTroubleInLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */; };
+		5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */; };
+		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; };
+		5B2A2CB41C182D7D006F3845 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */; };
+		5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */; };
+		5BDA47201C22596200C875AB /* BURootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA471F1C22596200C875AB /* BURootViewController.m */; };
 		698EA826EC5D060CB3D2F628 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FF08703B9A2468AB539B6 /* libPods.a */; };
 		7846225E1C0711E100EA589C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846225D1C0711E100EA589C /* main.m */; };
 		784622671C0711E100EA589C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784622651C0711E100EA589C /* Main.storyboard */; };
@@ -30,25 +30,38 @@
 		7846226F1C0711E100EA589C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7846226D1C0711E100EA589C /* LaunchScreen.storyboard */; };
 		7846227A1C0711E100EA589C /* TheBureauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622791C0711E100EA589C /* TheBureauTests.m */; };
 		784622851C0711E100EA589C /* TheBureauUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622841C0711E100EA589C /* TheBureauUITests.m */; };
-		784622951C0718B700EA589C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622941C0718B700EA589C /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		78F4A92A1C0CCC11001C76A6 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */; settings = {ASSET_TAGS = (); }; };
-		78F4A92B1C0CCC11001C76A6 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */; settings = {ASSET_TAGS = (); }; };
-		78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
-		78F4A93C1C0CD382001C76A6 /* AccountCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A93A1C0CD382001C76A6 /* AccountCreation.storyboard */; settings = {ASSET_TAGS = (); }; };
-		78F4A9411C0CD3F4001C76A6 /* BUAccountCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F4A9401C0CD3F4001C76A6 /* BUAccountCreationVC.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2381C0720B60013E9D2 /* Foundation+Extensions.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2401C0720FE0013E9D2 /* UIColor+APColor.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2471C07210F0013E9D2 /* NSString+Encode.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE24A1C0721590013E9D2 /* BUUtilities.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE24D1C0721690013E9D2 /* BUConstants.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2531C07255C0013E9D2 /* BUSocialChannel.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2561C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE25E1C0728660013E9D2 /* FBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25B1C0728660013E9D2 /* FBController.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */; settings = {ASSET_TAGS = (); }; };
-		78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		784622951C0718B700EA589C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784622941C0718B700EA589C /* AppDelegate.m */; };
+		78B5B71A1C561A6900E3C531 /* BUWebServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B7191C561A6900E3C531 /* BUWebServicesManager.m */; };
+		78B5B71C1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5B71B1C5675E200E3C531 /* ProfileCreation.storyboard */; };
+		78B5B71D1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B5B71B1C5675E200E3C531 /* ProfileCreation.storyboard */; };
+		78B5B7201C56788700E3C531 /* BUProfileSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B71F1C56788700E3C531 /* BUProfileSelectionVC.m */; };
+		78B5B7211C56788700E3C531 /* BUProfileSelectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B71F1C56788700E3C531 /* BUProfileSelectionVC.m */; };
+		78B5B7241C56789E00E3C531 /* BUProfileDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B7231C56789E00E3C531 /* BUProfileDetailsVC.m */; };
+		78B5B7251C56789E00E3C531 /* BUProfileDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B7231C56789E00E3C531 /* BUProfileDetailsVC.m */; };
+		78B5B7281C5678DD00E3C531 /* BUProfileHeritageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B7271C5678DD00E3C531 /* BUProfileHeritageVC.m */; };
+		78B5B7291C5678DD00E3C531 /* BUProfileHeritageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B7271C5678DD00E3C531 /* BUProfileHeritageVC.m */; };
+		78B5B72C1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */; };
+		78B5B72D1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */; };
+		78B5B7301C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */; };
+		78B5B7311C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */; };
+		78F4A92A1C0CCC11001C76A6 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */; };
+		78F4A92B1C0CCC11001C76A6 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */; };
+		78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */; };
+		78F4A93C1C0CD382001C76A6 /* AccountCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A93A1C0CD382001C76A6 /* AccountCreation.storyboard */; };
+		78F4A9411C0CD3F4001C76A6 /* BUAccountCreationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F4A9401C0CD3F4001C76A6 /* BUAccountCreationVC.m */; };
+		78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2321C071EAC0013E9D2 /* BUBaseViewController.m */; };
+		78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2361C0720B60013E9D2 /* UIKit+Extensions.m */; };
+		78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2381C0720B60013E9D2 /* Foundation+Extensions.m */; };
+		78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2401C0720FE0013E9D2 /* UIColor+APColor.m */; };
+		78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2421C0720FE0013E9D2 /* UIColor+CrossFade.m */; };
+		78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2471C07210F0013E9D2 /* NSString+Encode.m */; };
+		78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE24A1C0721590013E9D2 /* BUUtilities.m */; };
+		78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE24D1C0721690013E9D2 /* BUConstants.m */; };
+		78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2531C07255C0013E9D2 /* BUSocialChannel.m */; };
+		78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2561C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m */; };
+		78FEE25E1C0728660013E9D2 /* FBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25B1C0728660013E9D2 /* FBController.m */; };
+		78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE25D1C0728660013E9D2 /* FCBaseSocialController.m */; };
+		78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEE2621C0739CD0013E9D2 /* BULoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +124,19 @@
 		784622861C0711E100EA589C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		784622931C0718B700EA589C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		784622941C0718B700EA589C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78B5B7181C561A6900E3C531 /* BUWebServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUWebServicesManager.h; sourceTree = "<group>"; };
+		78B5B7191C561A6900E3C531 /* BUWebServicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUWebServicesManager.m; sourceTree = "<group>"; };
+		78B5B71B1C5675E200E3C531 /* ProfileCreation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileCreation.storyboard; sourceTree = "<group>"; };
+		78B5B71E1C56788700E3C531 /* BUProfileSelectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileSelectionVC.h; sourceTree = "<group>"; };
+		78B5B71F1C56788700E3C531 /* BUProfileSelectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileSelectionVC.m; sourceTree = "<group>"; };
+		78B5B7221C56789E00E3C531 /* BUProfileDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileDetailsVC.h; sourceTree = "<group>"; };
+		78B5B7231C56789E00E3C531 /* BUProfileDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileDetailsVC.m; sourceTree = "<group>"; };
+		78B5B7261C5678DD00E3C531 /* BUProfileHeritageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileHeritageVC.h; sourceTree = "<group>"; };
+		78B5B7271C5678DD00E3C531 /* BUProfileHeritageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileHeritageVC.m; sourceTree = "<group>"; };
+		78B5B72A1C5678F900E3C531 /* BUProfileOccupationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileOccupationVC.h; sourceTree = "<group>"; };
+		78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileOccupationVC.m; sourceTree = "<group>"; };
+		78B5B72E1C56792000E3C531 /* BUProfileLegalStatusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileLegalStatusVC.h; sourceTree = "<group>"; };
+		78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileLegalStatusVC.m; sourceTree = "<group>"; };
 		78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
@@ -228,6 +254,7 @@
 		7846225B1C0711E100EA589C /* TheBureau */ = {
 			isa = PBXGroup;
 			children = (
+				78B5B7171C55EB9700E3C531 /* Webservices */,
 				78FEE2501C07252D0013E9D2 /* ModelObjects */,
 				784622961C0718E500EA589C /* ViewControllers */,
 				784622921C0718B700EA589C /* ApplicationDelegate */,
@@ -338,6 +365,7 @@
 		7846229D1C07197E00EA589C /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				78B5B71B1C5675E200E3C531 /* ProfileCreation.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -349,6 +377,15 @@
 				78FEE24A1C0721590013E9D2 /* BUUtilities.m */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		78B5B7171C55EB9700E3C531 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				78B5B7181C561A6900E3C531 /* BUWebServicesManager.h */,
+				78B5B7191C561A6900E3C531 /* BUWebServicesManager.m */,
+			);
+			path = Webservices;
 			sourceTree = "<group>";
 		};
 		78F4A9261C0CCC11001C76A6 /* Fonts */ = {
@@ -383,6 +420,16 @@
 		78F4A93E1C0CD3DB001C76A6 /* ProfileCreation */ = {
 			isa = PBXGroup;
 			children = (
+				78B5B71E1C56788700E3C531 /* BUProfileSelectionVC.h */,
+				78B5B71F1C56788700E3C531 /* BUProfileSelectionVC.m */,
+				78B5B7221C56789E00E3C531 /* BUProfileDetailsVC.h */,
+				78B5B7231C56789E00E3C531 /* BUProfileDetailsVC.m */,
+				78B5B7261C5678DD00E3C531 /* BUProfileHeritageVC.h */,
+				78B5B7271C5678DD00E3C531 /* BUProfileHeritageVC.m */,
+				78B5B72A1C5678F900E3C531 /* BUProfileOccupationVC.h */,
+				78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */,
+				78B5B72E1C56792000E3C531 /* BUProfileLegalStatusVC.h */,
+				78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */,
 			);
 			path = ProfileCreation;
 			sourceTree = "<group>";
@@ -610,6 +657,7 @@
 				784622671C0711E100EA589C /* Main.storyboard in Resources */,
 				78F4A93C1C0CD382001C76A6 /* AccountCreation.storyboard in Resources */,
 				78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */,
+				78B5B71C1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */,
 				5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */,
 				5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */,
 				78F4A92B1C0CCC11001C76A6 /* Comfortaa-Light.ttf in Resources */,
@@ -621,6 +669,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B5B71D1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,16 +756,22 @@
 				5BDA47201C22596200C875AB /* BURootViewController.m in Sources */,
 				78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */,
 				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
+				78B5B72C1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */,
 				78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */,
+				78B5B71A1C561A6900E3C531 /* BUWebServicesManager.m in Sources */,
 				1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */,
 				78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */,
 				78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */,
 				78FEE24B1C0721590013E9D2 /* BUUtilities.m in Sources */,
+				78B5B7241C56789E00E3C531 /* BUProfileDetailsVC.m in Sources */,
 				5B1628871C4CFE400034FA33 /* UIImage+animatedGIF.m in Sources */,
+				78B5B7301C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */,
 				5B1628841C4CFA620034FA33 /* BUSplashViewController.m in Sources */,
+				78B5B7281C5678DD00E3C531 /* BUProfileHeritageVC.m in Sources */,
 				5B2A2CAB1C0CD68B006F3845 /* BUTroubleInLoginVC.m in Sources */,
 				78FEE23A1C0720B60013E9D2 /* Foundation+Extensions.m in Sources */,
 				78FEE2631C0739CD0013E9D2 /* BULoginViewController.m in Sources */,
+				78B5B7201C56788700E3C531 /* BUProfileSelectionVC.m in Sources */,
 				78FEE2571C0726D20013E9D2 /* NSObject+FCKeyPathHelper.m in Sources */,
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */,
@@ -733,7 +788,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B5B7211C56788700E3C531 /* BUProfileSelectionVC.m in Sources */,
 				7846227A1C0711E100EA589C /* TheBureauTests.m in Sources */,
+				78B5B7291C5678DD00E3C531 /* BUProfileHeritageVC.m in Sources */,
+				78B5B7251C56789E00E3C531 /* BUProfileDetailsVC.m in Sources */,
+				78B5B72D1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */,
+				78B5B7311C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

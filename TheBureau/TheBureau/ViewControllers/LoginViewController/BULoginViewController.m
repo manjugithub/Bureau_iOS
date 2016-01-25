@@ -12,6 +12,7 @@
 #import "BUConstants.h"
 #import "BUAuthButton.h"
 #import <DigitsKit/DigitsKit.h>
+#import "BUAccountCreationVC.h"
 @interface BULoginViewController ()
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
@@ -81,7 +82,12 @@
     [[FBController sharedInstance]clearSession];
     [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
         if (!error) {
-            [self performSegueWithIdentifier:@"account creation" sender:self];
+            self.socialChannel = socialChannel;
+            UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
+            vc.socialChannel = socialChannel;
+            
+            [self.navigationController pushViewController:vc animated:YES];
         }else{
             [[FBController sharedInstance]clearSession];
         }
@@ -115,6 +121,7 @@
 
 -(IBAction)loginUsingFacebook:(id)sender
 {
+    self.loginType = eLoginFromFB;
     [self associateFacebook];
 }
 -(IBAction)loginUsingEmail:(id)sender
@@ -122,59 +129,71 @@
     [self performSegueWithIdentifier:@"account creation" sender:self];
 }
 
--(IBAction)loginUsingPhonenum:(id)sender{
-    
-//    [[Digits sharedInstance]authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
-//        if (session.userID) {
-//            // TODO: associate the session userID with your user model
-//            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
-//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
-//                                                            message:msg
-//                                                           delegate:nil
-//                                                  cancelButtonTitle:@"OK"
-//                                                  otherButtonTitles:nil];
-//            [alert show];
-//        } else if (error) {
-//            NSLog(@"Authentication error: %@", error.localizedDescription);
-//        }
-//    }];
-    
+-(IBAction)loginUsingPhonenum:(id)sender
+{
+    self.loginType = eLoginFromDigit;
+    [self loginWithDigit];
+}
+
+
+-(void)loginWithDigit
+{
     [[Digits sharedInstance] authenticateWithViewController:nil configuration:_configuration completion:^(DGTSession *session, NSError *error) {
         if (session) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                // TODO: associate the session userID with your user model
-                NSString *message = [NSString stringWithFormat:@"Email address: %@, phone number: %@", session.emailAddress, session.phoneNumber];
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"You are logged in!" message:message preferredStyle:UIAlertControllerStyleAlert];
-                [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-                [self presentViewController:alertController animated:YES completion:nil];
+                
+                
+                if(nil == self.socialChannel)
+                    self.socialChannel = [[BUSocialChannel alloc] init];
+                
+                self.socialChannel.mobileNumber = session.phoneNumber;
+                self.socialChannel.emailID = session.emailAddress;
+                
+                
+                /*
+                 
+                 Hello Manjunaht , Vinay  ,
+                 
+                 Please hit the below url from your end to check for login creds :
+                 
+                 http://app.thebureauapp.com/login/checkLogin
+                 
+                 Parameters to be POSTED :
+                 
+                 - login_type : Takes either 'fb' or 'digits' as input
+                 
+                 - if login_type is 'fb' , then the parameter to be posted is 'fb_id'  , else if login_type is 'digits' , parameter to be posted is 'digits'
+                 
+                 So for example , if login_type = fb and fb_id = 'asdj2312312kjas'
+                 
+                 The sample output will like below in the JSON format :
+                 
+                 {"msg":"Success","userid":"1","profile_details":[{"first_name":"Siddharth","last_name":"Raghunath","dob":"2016-01-14","gender":"Male","phone_number":"9591314204","email":"siddharth@zolipe.com"}]}
+                 */
+                
+                
+                NSDictionary *parameters = nil;
+                
+                if(self.loginType == eLoginFromFB)
+                {
+                    parameters = @{@"login_type": @"fb",
+                                   @"fb_id":self.socialChannel.profileDetails.fbID,
+                                   @"digits":session.phoneNumber};
+                }
+                else
+                {
+                    parameters = @{@"login_type": @"digits",
+                                   @"digits":session.phoneNumber};
+                }
+                [[BUWebServicesManager sharedManager] loginWithDelegeate:self parameters:parameters];
+                
             });
         } else {
             NSLog(@"Authentication error: %@", error.localizedDescription);
         }
     }];
 
-    
-    
-//    - (void)didTapLoginButton:(UIButton *)sender {
-//        DGTAuthenticationConfiguration *configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsEmail];
-//        [[Digits sharedInstance] authenticateWithViewController:nil configuration:configuration completion:^(DGTSession *session, NSError *error) {
-//            if (session) {
-//                dispatch_async(dispatch_get_main_queue(), ^{
-//                    // TODO: associate the session userID with your user model
-//                    NSString *message = [NSString stringWithFormat:@"Email address: %@, phone number: %@", session.emailAddress, session.phoneNumber];
-//                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"You are logged in!" message:message preferredStyle:UIAlertControllerStyleAlert];
-//                    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-//                    [self presentViewController:alertController animated:YES completion:nil];
-//                });
-//            } else {
-//                NSLog(@"Authentication error: %@", error.localizedDescription);
-//            }
-//        }];
-//    }
-
-
 }
-
 
 -(IBAction)logout:(id)sender
 {
@@ -184,4 +203,18 @@
 }
 
 
+-(void)didSuccess:(id)inResult;
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Login Successful" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
+-(void)didFail:(id)inResult;
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Login Failed" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 @end

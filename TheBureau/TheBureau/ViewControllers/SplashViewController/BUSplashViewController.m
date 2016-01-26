@@ -9,6 +9,7 @@
 #import "BUSplashViewController.h"
 #import "UIImage+animatedGIF.h"
 #import "BUProfileOccupationVC.h"
+#import "BUProfileSelectionVC.h"
 
 @interface BUSplashViewController ()
 {
@@ -48,7 +49,7 @@
     
     
     UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
-    BUProfileOccupationVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileOccupationVC"];
+    BUProfileSelectionVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileSelectionVC"];
     [self.navigationController pushViewController:vc animated:YES];
     
     

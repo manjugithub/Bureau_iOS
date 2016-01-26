@@ -185,6 +185,7 @@
                     parameters = @{@"login_type": @"digits",
                                    @"digits":session.phoneNumber};
                 }
+                [self startActivityIndicator:YES];
                 [[BUWebServicesManager sharedManager] loginWithDelegeate:self parameters:parameters];
                 
             });
@@ -236,6 +237,7 @@
 
 -(void)didFail:(id)inResult;
 {
+    [self startActivityIndicator:YES];
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Login Failed" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];

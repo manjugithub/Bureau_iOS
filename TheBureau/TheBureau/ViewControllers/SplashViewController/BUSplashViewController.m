@@ -8,6 +8,7 @@
 
 #import "BUSplashViewController.h"
 #import "UIImage+animatedGIF.h"
+#import "BUProfileOccupationVC.h"
 
 @interface BUSplashViewController ()
 {
@@ -43,7 +44,12 @@
 {
     [splashTimer invalidate];
     
-    [self performSegueWithIdentifier:@"main" sender:self];
+   // [self performSegueWithIdentifier:@"main" sender:self];
+    
+    
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
+    BUProfileOccupationVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileOccupationVC"];
+    [self.navigationController pushViewController:vc animated:YES];
     
     
 }

@@ -45,14 +45,7 @@
 {
     [splashTimer invalidate];
     
-   // [self performSegueWithIdentifier:@"main" sender:self];
-    
-    
-    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
-    BUProfileSelectionVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileSelectionVC"];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-    
+    [self performSegueWithIdentifier:@"main" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

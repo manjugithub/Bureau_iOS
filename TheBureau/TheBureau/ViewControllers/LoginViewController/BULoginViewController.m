@@ -33,8 +33,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsEmail];
-
+   // _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:dgt];
+    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
     _configuration.appearance = [self makeTheme];
 
 }

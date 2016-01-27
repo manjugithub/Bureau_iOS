@@ -7,7 +7,7 @@
 //
 
 #import "BUAccountCreationVC.h"
-
+#import "BUProfileSelectionVC.h"
 @interface BUAccountCreationVC ()
 
 
@@ -18,9 +18,13 @@
 @property(nonatomic,weak) IBOutlet UITextField *mobileNumTF;
 @property(nonatomic,weak) IBOutlet UITextField *dateofbirthTF;
 
+@property(nonatomic,weak) IBOutlet UIImageView *femaleImgView,*maleImgView;
+@property(nonatomic,weak) IBOutlet UIButton *genderSelectionBtn;
+
 @property(nonatomic) eNavigatedFrom navFrom;
 -(IBAction)setGender:(id)sender;
 -(IBAction)setDOB:(id)sender;
+-(IBAction)signUpBtnClicked:(id)sender;
 @end
 
 @implementation BUAccountCreationVC
@@ -32,7 +36,6 @@
     self.firstNameTF.leftViewMode = UITextFieldViewModeAlways;
     self.firstNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
     
-    self.firstNameTF.layer.sublayerTransform = CATransform3DMakeTranslation(0, 0, 30);
     
     self.lastNameTF.leftViewMode = UITextFieldViewModeAlways;
     self.lastNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
@@ -56,13 +59,13 @@
 {
     [super viewWillAppear:animated];
     
-
     
-    self.firstNameTF.text = self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @"";
-    self.lastNameTF.text = self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @"";
-    self.emailIdTF.text = self.socialChannel.emailID;
-    self.mobileNumTF.text = self.socialChannel.mobileNumber;
-    self.dateofbirthTF.text = self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @"";
+    self.firstNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @""];
+    
+    self.lastNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @""];
+    self.emailIdTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.emailID];
+    self.mobileNumTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.mobileNumber];
+    self.dateofbirthTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @""];
     
 }
 
@@ -83,11 +86,40 @@
 
 -(IBAction)setGender:(id)sender
 {
+    NSString *femaleImgName,*maleImgName,*genderImgName;
+    
+    if(0 == self.genderSelectionBtn.tag)
+    {
+        femaleImgName = @"ic_female_s2.png";
+        maleImgName = @"ic_male_s1.png";
+        genderImgName = @"switch_female.png";
+        self.genderSelectionBtn.tag = 1;
+    }
+    else
+    {
+        self.genderSelectionBtn.tag = 0;
+        femaleImgName = @"ic_female_s1.png";
+        maleImgName = @"ic_male_s2.png";
+        genderImgName = @"switch_male.png";
+    }
+    
+    self.femaleImgView.image = [UIImage imageNamed:femaleImgName];
+    self.maleImgView.image = [UIImage imageNamed:maleImgName];
+    [self.genderSelectionBtn setImage:[UIImage imageNamed:genderImgName]
+                             forState:UIControlStateNormal];
     
 }
+
 -(IBAction)setDOB:(id)sender
 {
-    
+
+}
+-(IBAction)signUpBtnClicked:(id)sender
+{
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
+    BUProfileSelectionVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileSelectionVC"];
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 @end

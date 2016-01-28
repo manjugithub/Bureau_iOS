@@ -89,7 +89,7 @@
 - (void) requestFriendPermission:(void(^)(BOOL whetherPermissionGiven, NSError *error))completion
 {
     
-}
+   }
 
 -(BOOL)isAuthenticated
 {

@@ -10,6 +10,7 @@
 #import "UIImage+animatedGIF.h"
 #import "BUProfileOccupationVC.h"
 #import "BUProfileSelectionVC.h"
+#import "BUAccountCreationVC.h"
 
 @interface BUSplashViewController ()
 {
@@ -45,7 +46,11 @@
 {
     [splashTimer invalidate];
     
-    [self performSegueWithIdentifier:@"main" sender:self];
+  //  [self performSegueWithIdentifier:@"main" sender:self];
+    
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

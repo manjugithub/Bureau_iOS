@@ -21,6 +21,12 @@
 @property(nonatomic,weak) IBOutlet UIImageView *femaleImgView,*maleImgView;
 @property(nonatomic,weak) IBOutlet UIButton *genderSelectionBtn;
 
+@property (nonatomic, assign) CGSize keyboardSize;
+@property (nonatomic, strong) UITextField *currentTextField;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollview;
+@property (nonatomic, strong) UIView *keyboarAccessoryview;
+
+
 @property(nonatomic) eNavigatedFrom navFrom;
 -(IBAction)setGender:(id)sender;
 -(IBAction)setDOB:(id)sender;
@@ -48,9 +54,9 @@
     
     self.dateofbirthTF.leftViewMode = UITextFieldViewModeAlways;
     self.dateofbirthTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_dob"]];
-
     
-
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -67,6 +73,9 @@
     self.mobileNumTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.mobileNumber];
     self.dateofbirthTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @""];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,14 +84,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 -(IBAction)setGender:(id)sender
 {
@@ -112,14 +121,98 @@
 
 -(IBAction)setDOB:(id)sender
 {
-
+    
 }
 -(IBAction)signUpBtnClicked:(id)sender
 {
     UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
     BUProfileSelectionVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileSelectionVC"];
     [self.navigationController pushViewController:vc animated:YES];
-
+    
 }
 
+
+- (void)adjustScrollViewOffsetToCenterTextField:(UITextField *)textField
+{
+    CGRect textFieldFrame = textField.frame;
+    //    float keyboardHeight = MIN(self.keyboardSize.width, self.keyboardSize.height);
+    //
+    //    float visibleScrollViewHeight = self.scrollview.frame.size.height - keyboardHeight+60;
+    //    float offsetInScrollViewCoords = (visibleScrollViewHeight / 2) - (textFieldFrame.size.height / 2);
+    //
+    //    scrollViewOffset = textFieldFrame.origin.y - offsetInScrollViewCoords;
+    
+    CGPoint buttonOrigin = textFieldFrame.origin;
+    
+    CGFloat buttonHeight = textFieldFrame.size.height;
+    
+    CGRect visibleRect = self.view.frame;
+    
+    visibleRect.size.height -= _keyboardSize.height;
+    
+    if (!CGRectContainsPoint(visibleRect, buttonOrigin)){
+        
+        CGPoint scrollPoint = CGPointMake(0.0, buttonOrigin.y - visibleRect.size.height + buttonHeight);
+        
+        [self.scrollview setContentOffset:scrollPoint animated:YES];
+        
+        
+    }
+    
+    
+    
+}
+- (void)keyboardWillHide:(NSNotification *)notification {
+    self.keyboardSize = CGSizeZero;
+    
+    [self.scrollview setContentOffset:CGPointZero animated:YES];
+    
+}
+
+- (void)textFieldGotFocus:(UITextField *)sender {
+    sender.inputAccessoryView = self.keyboarAccessoryview;
+    self.currentTextField = sender;
+    [self adjustScrollViewOffsetToCenterTextField:sender];
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification {
+    NSDictionary *info = [notification userInfo];
+    NSValue *keyBoardEndFrame = [info objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGSize keyboardSize = [keyBoardEndFrame CGRectValue].size;
+    self.keyboardSize = keyboardSize;
+    
+    CGPoint textFieldOrigin = self.currentTextField.frame.origin;
+    
+    CGFloat textfieldHeight = self.currentTextField.frame.size.height;
+    
+    CGRect visibleRect = self.scrollview.frame;
+    
+    visibleRect.size.height -= _keyboardSize.height+80;
+    
+    if (!CGRectContainsPoint(visibleRect, textFieldOrigin)){
+        
+        CGPoint scrollPoint = CGPointMake(0.0, textFieldOrigin.y - visibleRect.size.height + textfieldHeight);
+        
+        [self.scrollview setContentOffset:scrollPoint animated:YES];
+        
+        
+    }
+    
+    
+}
+
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField;
+{
+    
+    [self textFieldGotFocus:textField];
+}
+
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [self.currentTextField resignFirstResponder];
+    
+    return YES;
+}
 @end

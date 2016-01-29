@@ -65,7 +65,8 @@
 {
     [super viewWillAppear:animated];
     
-    
+    [self.scrollview setContentOffset:CGPointZero animated:YES];
+ 
     self.firstNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @""];
     
     self.lastNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @""];
@@ -148,7 +149,7 @@
     
     CGRect visibleRect = self.view.frame;
     
-    visibleRect.size.height -= _keyboardSize.height;
+    visibleRect.size.height -= _keyboardSize.height+100;
     
     if (!CGRectContainsPoint(visibleRect, buttonOrigin)){
         
@@ -187,7 +188,7 @@
     
     CGRect visibleRect = self.scrollview.frame;
     
-    visibleRect.size.height -= _keyboardSize.height+80;
+    visibleRect.size.height -= _keyboardSize.height+100;
     
     if (!CGRectContainsPoint(visibleRect, textFieldOrigin)){
         

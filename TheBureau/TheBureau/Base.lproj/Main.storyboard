@@ -1502,6 +1502,13 @@
                                         <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SB-95-klz">
+                                        <rect key="frame" x="40" y="183" width="520" height="30"/>
+                                        <animations/>
+                                        <connections>
+                                            <action selector="dateofbirthBtn:" destination="fZs-4K-Y51" eventType="touchUpInside" id="hjD-cw-A67"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <constraints>
@@ -1510,8 +1517,11 @@
                                     <constraint firstItem="kLT-ZZ-RoX" firstAttribute="trailing" secondItem="OwY-bA-g8w" secondAttribute="trailing" id="4no-7V-Wpz"/>
                                     <constraint firstItem="ZWo-AQ-WPe" firstAttribute="leading" secondItem="hcP-wY-8y9" secondAttribute="leading" id="4pl-8r-H3M"/>
                                     <constraint firstItem="OwY-bA-g8w" firstAttribute="top" secondItem="kLT-ZZ-RoX" secondAttribute="bottom" constant="10" id="4ru-e6-dQx"/>
+                                    <constraint firstItem="1SB-95-klz" firstAttribute="trailing" secondItem="hcP-wY-8y9" secondAttribute="trailing" id="5uX-p8-RXY"/>
+                                    <constraint firstItem="1SB-95-klz" firstAttribute="leading" secondItem="hcP-wY-8y9" secondAttribute="leading" id="7yz-bP-smj"/>
                                     <constraint firstItem="SUF-4J-Rp8" firstAttribute="leading" secondItem="dtD-Wr-cLk" secondAttribute="leading" id="9Lo-vL-e5d"/>
                                     <constraint firstItem="kLT-ZZ-RoX" firstAttribute="top" secondItem="dtD-Wr-cLk" secondAttribute="bottom" constant="79" id="BHu-lB-90l"/>
+                                    <constraint firstItem="dtD-Wr-cLk" firstAttribute="top" secondItem="1SB-95-klz" secondAttribute="bottom" constant="8" symbolic="YES" id="CvE-RF-3iC"/>
                                     <constraint firstItem="UXg-PE-LqA" firstAttribute="top" secondItem="rzi-OD-Ugi" secondAttribute="bottom" constant="29" id="DCc-rB-qnH"/>
                                     <constraint firstItem="PPh-j0-e0A" firstAttribute="top" secondItem="X5h-VN-uHy" secondAttribute="bottom" constant="10" id="DOf-xP-j4c"/>
                                     <constraint firstItem="hcP-wY-8y9" firstAttribute="trailing" secondItem="OwY-bA-g8w" secondAttribute="trailing" id="GQq-Kb-LlJ"/>

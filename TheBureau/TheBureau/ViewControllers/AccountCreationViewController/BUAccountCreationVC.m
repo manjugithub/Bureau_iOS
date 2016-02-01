@@ -8,6 +8,8 @@
 
 #import "BUAccountCreationVC.h"
 #import "BUProfileSelectionVC.h"
+#import "UIView+FLKAutoLayout.h"
+
 @interface BUAccountCreationVC ()
 
 
@@ -207,8 +209,52 @@
 {
     
     [self textFieldGotFocus:textField];
-}
+    
+   }
 
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;        // return NO to disallow editing.
+{
+    
+    if (textField == self.dateofbirthTF) {
+        
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Birthday\n\n\n\n\n\n\n\n" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIDatePicker *picker = [[UIDatePicker alloc] init];
+        [picker setDatePickerMode:UIDatePickerModeDate];
+        [alertController.view addSubview:picker];
+        [picker alignCenterYWithView:alertController.view predicate:@"0.0"];
+        [picker alignCenterXWithView:alertController.view predicate:@"0.0"];
+        [picker constrainWidth:@"270" ];
+        
+        [alertController addAction:({
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                NSLog(@"OK");
+                NSLog(@"%@",picker.date);
+                
+                self.dateofbirthTF.text = [NSString stringWithFormat:@"%@", picker.date];
+            }];
+            action;
+        })];
+        
+        [alertController addAction:({
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                NSLog(@"cancel");
+                //NSLog(@"%@",picker.date);
+            }];
+            action;
+        })];
+        //  UIPopoverPresentationController *popoverController = alertController.popoverPresentationController;
+        //  popoverController.sourceView = sender;
+        //   popoverController.sourceRect = [sender bounds];
+           [self presentViewController:alertController  animated:YES completion:nil];
+        
+        
+    }
+
+    return YES;
+    
+    
+}
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     

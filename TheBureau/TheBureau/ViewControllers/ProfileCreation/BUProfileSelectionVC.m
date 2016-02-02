@@ -7,6 +7,8 @@
 //
 
 #import "BUProfileSelectionVC.h"
+#import "BUProfileDetailsVC.h"
+
 
 @interface BUProfileSelectionVC ()<UIActionSheetDelegate>
 @property(nonatomic,weak) IBOutlet UITextField *firstNameTF;
@@ -14,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *relationLabel;
 
 @property(nonatomic,strong)NSArray* relationCircle;
+
+-(IBAction)continueClicked:(id)sender;
 
 
 @end
@@ -74,4 +78,11 @@
 }
 */
 
+-(IBAction)continueClicked:(id)sender
+{
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
+    BUProfileDetailsVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileDetailsVC"];
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
 @end

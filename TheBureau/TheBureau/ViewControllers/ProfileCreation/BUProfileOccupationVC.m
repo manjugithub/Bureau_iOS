@@ -34,4 +34,12 @@
 }
 */
 
+
+-(IBAction)continueClicked:(id)sender
+{
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
+    BUProfileOccupationVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileOccupationVC"];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 @end

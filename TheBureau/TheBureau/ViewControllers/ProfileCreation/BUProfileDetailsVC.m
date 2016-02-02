@@ -8,6 +8,7 @@
 
 #import "BUProfileDetailsVC.h"
 #import "UIView+FLKAutoLayout.h"
+#import "BUProfileHeritageVC.h"
 
 @interface BUProfileDetailsVC ()<UIPickerViewDataSource,UIPickerViewDelegate>
 
@@ -29,9 +30,7 @@
 @property(nonatomic) NSMutableArray *inchesMutableArray;
 
 
-
-
-
+-(IBAction)continueClicked:(id)sender;
 
 @end
 
@@ -318,14 +317,13 @@ numberOfRowsInComponent:(NSInteger)component{
     
     
 }
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
+
+-(IBAction)continueClicked:(id)sender
+{
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
+    BUProfileHeritageVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileHeritageVC"];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 @end

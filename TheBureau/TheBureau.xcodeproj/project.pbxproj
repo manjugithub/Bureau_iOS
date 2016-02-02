@@ -16,12 +16,12 @@
 		5B16288D1C4D04B80034FA33 /* TheBureau_Splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288C1C4D04B80034FA33 /* TheBureau_Splash.gif */; };
 		5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5B16288E1C4D252A0034FA33 /* ALLURA-REGULAR.TTF */; };
 		5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1628911C4F63D10034FA33 /* BUProfileDetails.m */; };
-		5B16290C1C5F61EE0034FA33 /* BUCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16290B1C5F61EE0034FA33 /* BUCustomAlertView.m */; settings = {ASSET_TAGS = (); }; };
-		5B1629181C5F62270034FA33 /* FLKAutoLayoutPredicateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16290F1C5F62270034FA33 /* FLKAutoLayoutPredicateList.m */; settings = {ASSET_TAGS = (); }; };
-		5B1629191C5F62270034FA33 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629111C5F62270034FA33 /* NSLayoutConstraint+FLKAutoLayoutDebug.m */; settings = {ASSET_TAGS = (); }; };
-		5B16291A1C5F62270034FA33 /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629131C5F62270034FA33 /* UIView+FLKAutoLayout.m */; settings = {ASSET_TAGS = (); }; };
-		5B16291B1C5F62270034FA33 /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629151C5F62270034FA33 /* UIView+FLKAutoLayoutDebug.m */; settings = {ASSET_TAGS = (); }; };
-		5B16291C1C5F62270034FA33 /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629171C5F62270034FA33 /* UIView+FLKAutoLayoutPredicate.m */; settings = {ASSET_TAGS = (); }; };
+		5B16290C1C5F61EE0034FA33 /* BUCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16290B1C5F61EE0034FA33 /* BUCustomAlertView.m */; };
+		5B1629181C5F62270034FA33 /* FLKAutoLayoutPredicateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16290F1C5F62270034FA33 /* FLKAutoLayoutPredicateList.m */; };
+		5B1629191C5F62270034FA33 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629111C5F62270034FA33 /* NSLayoutConstraint+FLKAutoLayoutDebug.m */; };
+		5B16291A1C5F62270034FA33 /* UIView+FLKAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629131C5F62270034FA33 /* UIView+FLKAutoLayout.m */; };
+		5B16291B1C5F62270034FA33 /* UIView+FLKAutoLayoutDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629151C5F62270034FA33 /* UIView+FLKAutoLayoutDebug.m */; };
+		5B16291C1C5F62270034FA33 /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1629171C5F62270034FA33 /* UIView+FLKAutoLayoutPredicate.m */; };
 		5B2A2CAB1C0CD68B006F3845 /* BUTroubleInLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAA1C0CD68B006F3845 /* BUTroubleInLoginVC.m */; };
 		5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A2CAD1C0CE72B006F3845 /* BUForgotPasswordVC.m */; };
 		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; };
@@ -50,6 +50,10 @@
 		78B5B72D1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */; };
 		78B5B7301C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */; };
 		78B5B7311C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */; };
+		78CF17281C60979600779203 /* CustomPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CF17271C60979600779203 /* CustomPicker.storyboard */; };
+		78CF172B1C609D3C00779203 /* PWCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CF172A1C609D3C00779203 /* PWCustomPickerView.m */; };
+		78CF172F1C609D5100779203 /* PWCustomPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CF172D1C609D5100779203 /* PWCustomPickerCell.m */; };
+		78CF17301C609D5100779203 /* PWCustomPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CF172E1C609D5100779203 /* PWCustomPickerCell.xib */; };
 		78F4A92A1C0CCC11001C76A6 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */; };
 		78F4A92B1C0CCC11001C76A6 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */; };
 		78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */; };
@@ -154,6 +158,12 @@
 		78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileOccupationVC.m; sourceTree = "<group>"; };
 		78B5B72E1C56792000E3C531 /* BUProfileLegalStatusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileLegalStatusVC.h; sourceTree = "<group>"; };
 		78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileLegalStatusVC.m; sourceTree = "<group>"; };
+		78CF17271C60979600779203 /* CustomPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomPicker.storyboard; sourceTree = "<group>"; };
+		78CF17291C609D3C00779203 /* PWCustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCustomPickerView.h; sourceTree = "<group>"; };
+		78CF172A1C609D3C00779203 /* PWCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCustomPickerView.m; sourceTree = "<group>"; };
+		78CF172C1C609D5100779203 /* PWCustomPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCustomPickerCell.h; sourceTree = "<group>"; };
+		78CF172D1C609D5100779203 /* PWCustomPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCustomPickerCell.m; sourceTree = "<group>"; };
+		78CF172E1C609D5100779203 /* PWCustomPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PWCustomPickerCell.xib; sourceTree = "<group>"; };
 		78F4A9271C0CCC11001C76A6 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		78F4A9281C0CCC11001C76A6 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		78F4A9291C0CCC11001C76A6 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
@@ -382,6 +392,11 @@
 		7846229B1C07197E00EA589C /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				78CF172C1C609D5100779203 /* PWCustomPickerCell.h */,
+				78CF172D1C609D5100779203 /* PWCustomPickerCell.m */,
+				78CF172E1C609D5100779203 /* PWCustomPickerCell.xib */,
+				78CF17291C609D3C00779203 /* PWCustomPickerView.h */,
+				78CF172A1C609D3C00779203 /* PWCustomPickerView.m */,
 				5B0AEDC71C22C69D00877C24 /* BUAuthButton.h */,
 				5B0AEDC81C22C69D00877C24 /* BUAuthButton.m */,
 				5B1629091C5F61EE0034FA33 /* CustomAlertView */,
@@ -410,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				78B5B71B1C5675E200E3C531 /* ProfileCreation.storyboard */,
+				78CF17271C60979600779203 /* CustomPicker.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -686,6 +702,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CF17301C609D5100779203 /* PWCustomPickerCell.xib in Resources */,
 				5B2A2CB41C182D7D006F3845 /* DigitsKitResources.bundle in Resources */,
 				78F4A92A1C0CCC11001C76A6 /* Comfortaa-Bold.ttf in Resources */,
 				7846226F1C0711E100EA589C /* LaunchScreen.storyboard in Resources */,
@@ -693,6 +710,7 @@
 				784622671C0711E100EA589C /* Main.storyboard in Resources */,
 				78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */,
 				78B5B71C1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */,
+				78CF17281C60979600779203 /* CustomPicker.storyboard in Resources */,
 				5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */,
 				5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */,
 				78F4A92B1C0CCC11001C76A6 /* Comfortaa-Light.ttf in Resources */,
@@ -796,6 +814,7 @@
 				78B5B71A1C561A6900E3C531 /* BUWebServicesManager.m in Sources */,
 				5B16291A1C5F62270034FA33 /* UIView+FLKAutoLayout.m in Sources */,
 				1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */,
+				78CF172F1C609D5100779203 /* PWCustomPickerCell.m in Sources */,
 				5B16291C1C5F62270034FA33 /* UIView+FLKAutoLayoutPredicate.m in Sources */,
 				78FEE2441C0720FE0013E9D2 /* UIColor+CrossFade.m in Sources */,
 				78FEE2541C07255C0013E9D2 /* BUSocialChannel.m in Sources */,
@@ -817,6 +836,7 @@
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */,
 				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,
+				78CF172B1C609D3C00779203 /* PWCustomPickerView.m in Sources */,
 				5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */,
 				5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */,
 				78F4A9411C0CD3F4001C76A6 /* BUAccountCreationVC.m in Sources */,

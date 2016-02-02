@@ -899,6 +899,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpp-TP-LsS">
                                         <rect key="frame" x="296" y="10" width="256" height="30"/>
                                         <connections>
+                                            <action selector="getReligion:" destination="3OX-NB-hj5" eventType="touchUpInside" id="IvG-L8-ihO"/>
                                             <action selector="setheight" destination="6VZ-Zr-YPZ" eventType="touchUpInside" id="Tez-cp-TjG"/>
                                         </connections>
                                     </button>
@@ -956,6 +957,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEM-EX-s5H">
                                         <rect key="frame" x="296" y="10" width="256" height="30"/>
                                         <connections>
+                                            <action selector="getMotherToungue:" destination="3OX-NB-hj5" eventType="touchUpInside" id="3rR-WX-0fy"/>
                                             <action selector="setheight" destination="6VZ-Zr-YPZ" eventType="touchUpInside" id="Ltb-qI-dX2"/>
                                         </connections>
                                     </button>
@@ -1013,6 +1015,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTY-Fv-mW6">
                                         <rect key="frame" x="296" y="10" width="256" height="30"/>
                                         <connections>
+                                            <action selector="getFamilyOrigin:" destination="3OX-NB-hj5" eventType="touchUpInside" id="Y7T-HG-nzu"/>
                                             <action selector="setheight" destination="6VZ-Zr-YPZ" eventType="touchUpInside" id="0bJ-3c-SZk"/>
                                         </connections>
                                     </button>
@@ -1070,6 +1073,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aq-YT-9j3">
                                         <rect key="frame" x="296" y="10" width="256" height="30"/>
                                         <connections>
+                                            <action selector="getSpecificationList:" destination="3OX-NB-hj5" eventType="touchUpInside" id="irh-87-7jY"/>
                                             <action selector="setheight" destination="6VZ-Zr-YPZ" eventType="touchUpInside" id="i8V-68-eQu"/>
                                         </connections>
                                     </button>
@@ -1197,7 +1201,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="familyOriginTF" destination="1Md-bB-MdF" id="7V0-bt-ZL5"/>
+                        <outlet property="gothraTF" destination="Z6v-9F-g8H" id="Vnm-jI-a0U"/>
+                        <outlet property="motherToungueTF" destination="FBO-wb-F48" id="AVu-rA-WLs"/>
                         <outlet property="navigationTitleLabel" destination="U3C-Bo-1Az" id="kWN-ji-gQw"/>
+                        <outlet property="religionTF" destination="AnB-UM-hy8" id="m59-tx-8Tx"/>
+                        <outlet property="specificationTF" destination="afh-8S-uR1" id="LTq-oE-uXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEj-rm-A7E" userLabel="First Responder" sceneMemberID="firstResponder"/>

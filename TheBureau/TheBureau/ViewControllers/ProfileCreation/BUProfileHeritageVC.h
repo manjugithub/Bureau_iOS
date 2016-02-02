@@ -7,7 +7,9 @@
 //
 
 #import "BUBaseViewController.h"
+#import "PWCustomPickerView.h"
+#import "BUWebServicesManager.h"
 
-@interface BUProfileHeritageVC : BUBaseViewController
+@interface BUProfileHeritageVC : BUBaseViewController<PWPickerViewDelegate,BUWebServicesCallBack>
 
 @end

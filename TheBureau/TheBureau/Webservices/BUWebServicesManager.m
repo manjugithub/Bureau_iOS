@@ -80,4 +80,76 @@ constructingBodyWithBlock:nil
      }];
 }
 
+
+-(void)getReligionList:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
+{
+    
+    self.delegate = inDelegate;
+    
+    NSString *baseURL = @"http://app.thebureauapp.com/admin/religion_ws";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:baseURL
+       parameters:inParams
+constructingBodyWithBlock:nil
+         progress:nil
+          success:^(NSURLSessionDataTask *operation, id responseObject)
+     {
+         [self.delegate didSuccess:responseObject];
+         NSLog(@"Success: %@", responseObject);
+     }
+          failure:^(NSURLSessionDataTask *operation, NSError *error)
+     {
+         [self.delegate didFail:error];
+         NSLog(@"Error: %@", error);
+     }];
+}
+
+-(void)getFamilyOriginList:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
+{
+    
+    self.delegate = inDelegate;
+    
+    NSString *baseURL = @"http://app.thebureauapp.com/admin/family_origin_ws";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:baseURL
+       parameters:inParams
+constructingBodyWithBlock:nil
+         progress:nil
+          success:^(NSURLSessionDataTask *operation, id responseObject)
+     {
+         [self.delegate didSuccess:responseObject];
+         NSLog(@"Success: %@", responseObject);
+     }
+          failure:^(NSURLSessionDataTask *operation, NSError *error)
+     {
+         [self.delegate didFail:error];
+         NSLog(@"Error: %@", error);
+     }];
+}
+
+-(void)getSpecificationList:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
+{
+    
+    self.delegate = inDelegate;
+    
+    NSString *baseURL = @"http://app.thebureauapp.com/admin/specification_ws";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:baseURL
+       parameters:inParams
+constructingBodyWithBlock:nil
+         progress:nil
+          success:^(NSURLSessionDataTask *operation, id responseObject)
+     {
+         [self.delegate didSuccess:responseObject];
+         NSLog(@"Success: %@", responseObject);
+     }
+          failure:^(NSURLSessionDataTask *operation, NSError *error)
+     {
+         [self.delegate didFail:error];
+         NSLog(@"Error: %@", error);
+     }];
+}
 @end

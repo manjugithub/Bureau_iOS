@@ -27,6 +27,19 @@ typedef enum {
 } eRegistrationType;
 
 
+
+typedef enum {
+    eReligionList,
+    eMotherToungueList,
+    eFamilyOriginList,
+    eSpecificationList,
+    eGothraList,
+} eHeritageList;
+
+
+
+
+
 @interface BUBaseViewController : UIViewController<UITextFieldDelegate>
 @property(nonatomic, weak) IBOutlet UILabel *navigationTitleLabel;
 -(IBAction)navigateBack:(id)sender;

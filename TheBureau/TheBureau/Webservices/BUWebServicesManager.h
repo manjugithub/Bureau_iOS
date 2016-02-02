@@ -22,4 +22,7 @@
 +(instancetype)sharedManager;
 -(void)signUpWithDelegeate:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
 -(void)loginWithDelegeate:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
+-(void)getReligionList:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
+-(void)getFamilyOriginList:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
+-(void)getSpecificationList:(id<BUWebServicesCallBack>)inDelegate parameters:(NSDictionary *)inParams;
 @end

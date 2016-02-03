@@ -87,6 +87,9 @@
         if (!error) {
             self.navFrom = eNavFromFb;
             self.socialChannel = socialChannel;
+            
+            
+                        [self regiserWithDigits];
         }else{
             [[FBController sharedInstance]clearSession];
         }

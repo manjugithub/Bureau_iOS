@@ -83,11 +83,7 @@
     [[FBController sharedInstance] authenticateWithCompletionHandler:^(BUSocialChannel *socialChannel, NSError *error, BOOL whetherAlreadyAuthenticated) {
         if (!error) {
             self.socialChannel = socialChannel;
-            UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
-            vc.socialChannel = socialChannel;
-            
-            [self.navigationController pushViewController:vc animated:YES];
+            [self loginWithDigit];
         }else{
             [[FBController sharedInstance]clearSession];
         }

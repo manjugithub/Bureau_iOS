@@ -68,7 +68,8 @@
 {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBarHidden = NO;
+    
     [self.scrollview setContentOffset:CGPointZero animated:YES];
  
     self.firstNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @""];

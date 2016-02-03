@@ -18,7 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    // [self setNavBarLogo];
-    self.navigationController.navigationBarHidden = YES;
 
 }
 - (void)setNavBarLogo {
@@ -34,7 +33,13 @@
     [self.navigationController.navigationBar addSubview:logo];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden = YES;
 
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

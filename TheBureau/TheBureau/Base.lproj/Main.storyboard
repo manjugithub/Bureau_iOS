@@ -1185,7 +1185,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAK-H9-CYp">
-                                <rect key="frame" x="0.0" y="56" width="600" height="544"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide your(the account holder's)information below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rzi-OD-Ugi">
                                         <rect key="frame" x="10" y="0.0" width="582" height="50"/>
@@ -1356,6 +1356,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.64313725489999995" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ZQ1-to-zvZ" firstAttribute="centerY" secondItem="Bk1-tv-c5f" secondAttribute="centerY" id="0uH-yD-NiC"/>
                                     <constraint firstItem="dtD-Wr-cLk" firstAttribute="top" secondItem="SUF-4J-Rp8" secondAttribute="bottom" constant="-161" id="3wg-iu-NyH"/>
@@ -1385,7 +1386,7 @@
                                     <constraint firstItem="ZQ1-to-zvZ" firstAttribute="leading" secondItem="Bk1-tv-c5f" secondAttribute="trailing" constant="13" id="T0Q-PB-t5B"/>
                                     <constraint firstItem="OwY-bA-g8w" firstAttribute="leading" secondItem="hcP-wY-8y9" secondAttribute="leading" id="U2r-2V-9dE"/>
                                     <constraint firstItem="SUF-4J-Rp8" firstAttribute="centerX" secondItem="WAK-H9-CYp" secondAttribute="centerX" id="UOR-GS-jgP"/>
-                                    <constraint firstAttribute="bottom" secondItem="gAJ-Js-foh" secondAttribute="bottom" constant="63" id="V1Z-Td-kjy"/>
+                                    <constraint firstAttribute="bottom" secondItem="gAJ-Js-foh" secondAttribute="bottom" constant="127" id="V1Z-Td-kjy"/>
                                     <constraint firstItem="RgG-UV-Ppc" firstAttribute="top" secondItem="UXg-PE-LqA" secondAttribute="bottom" constant="10" id="XMB-lr-hNv"/>
                                     <constraint firstItem="PPh-j0-e0A" firstAttribute="leading" secondItem="X5h-VN-uHy" secondAttribute="leading" id="YBW-PA-p5K"/>
                                     <constraint firstItem="rzi-OD-Ugi" firstAttribute="top" secondItem="WAK-H9-CYp" secondAttribute="top" id="akZ-uu-6z6"/>
@@ -1418,7 +1419,7 @@
                             <constraint firstItem="WAK-H9-CYp" firstAttribute="leading" secondItem="XEt-Qj-Cxz" secondAttribute="leading" id="OOr-cq-ed9"/>
                             <constraint firstAttribute="trailing" secondItem="WAK-H9-CYp" secondAttribute="trailing" id="U0c-V1-iz9"/>
                             <constraint firstItem="Aay-Yc-ZRU" firstAttribute="top" secondItem="WAK-H9-CYp" secondAttribute="bottom" id="haR-ef-Y3e"/>
-                            <constraint firstItem="WAK-H9-CYp" firstAttribute="top" secondItem="XEt-Qj-Cxz" secondAttribute="top" constant="56" id="i4U-Hw-jSX"/>
+                            <constraint firstItem="WAK-H9-CYp" firstAttribute="top" secondItem="XEt-Qj-Cxz" secondAttribute="top" id="i4U-Hw-jSX"/>
                         </constraints>
                     </view>
                     <connections>

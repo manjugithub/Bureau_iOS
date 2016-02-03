@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Profile Creation";
+    
     _relationCircle = [NSArray arrayWithObjects:@"Father",@"Mother",@"Family member", @"Friend", @"Sister", @"Brother",@"Self",nil];
 
     
@@ -39,10 +41,19 @@
     // Do any additional setup after loading the view.
     
     
-    [self.navigationController setNavigationBarHidden:NO];
+   // [self.navigationController setNavigationBarHidden:NO];
 
 }
 
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
+
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Information";
+    
     self.feetMutableArray = [[NSMutableArray alloc]init];
     
     self.inchesMutableArray = [[NSMutableArray alloc]init];

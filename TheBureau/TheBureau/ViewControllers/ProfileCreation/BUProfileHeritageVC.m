@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"Heritage";
     // Do any additional setup after loading the view.
 }
 

@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    // _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:dgt];
-    self.title = @"login";
+    self.title = @"   login  ";
     _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
     _configuration.appearance = [self makeTheme];
 
@@ -74,7 +74,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
   //  [self.loginBtn setupButtonThemeWithTitle:@"Login Using Phonenumber"];
-//    self.layoutConstant = self.overLayViewTapConstraint.constant;
+    self.layoutConstant = self.overLayViewTapConstraint.constant;
 }
 
 #pragma mark - FACEBOOK -

@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setNavBarLogo];
+   // [self setNavBarLogo];
+    self.navigationController.navigationBarHidden = YES;
+
 }
 - (void)setNavBarLogo {
     

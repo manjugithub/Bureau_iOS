@@ -30,6 +30,8 @@
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"TheBureau_Splash" withExtension:@"gif"];
     self.dataImageView.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url]];
     
+    self.navigationController.navigationBarHidden = YES;
+    
     
 }
 

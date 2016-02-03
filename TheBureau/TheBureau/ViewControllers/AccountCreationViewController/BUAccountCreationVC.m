@@ -40,6 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Account Creation";
     
     self.firstNameTF.leftViewMode = UITextFieldViewModeAlways;
     self.firstNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
@@ -67,13 +68,17 @@
 {
     [super viewWillAppear:animated];
     
+    self.navigationController.navigationBarHidden = YES;
     [self.scrollview setContentOffset:CGPointZero animated:YES];
  
     self.firstNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @""];
     
     self.lastNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @""];
+    
     self.emailIdTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.emailID];
+    
     self.mobileNumTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.mobileNumber];
+    
     self.dateofbirthTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @""];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -237,7 +242,7 @@
             NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
             [dateFormat setDateFormat:@"MM/dd/yyyy"];
             NSString *dateString = [dateFormat stringFromDate:picker.date];
-            self.dateofbirthTF.text = [NSString stringWithFormat:@"%@",dateString];
+            self.dateofbirthTF.text = [NSString stringWithFormat:@"  %@",dateString];
         }];
         action;
     })];

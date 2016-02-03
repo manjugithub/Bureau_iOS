@@ -41,6 +41,8 @@
 //    _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
   //  _configuration.appearance = [self makeTheme];
     
+    self.title =@"Sign Up";
+    
     _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsEmail];
     
     _configuration.appearance = [self makeTheme];
@@ -64,9 +66,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [self viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
 
+    
+    
+}
 -(void)viewDidAppear:(BOOL)animated
 {
+    
     self.layoutConstant = self.overLayViewTapConstraint.constant;
 }
 /*

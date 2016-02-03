@@ -37,6 +37,10 @@
     self.lastNameTF.leftViewMode = UITextFieldViewModeAlways;
     self.lastNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
     // Do any additional setup after loading the view.
+    
+    
+    [self.navigationController setNavigationBarHidden:NO];
+
 }
 
 
@@ -85,4 +89,14 @@
     [self.navigationController pushViewController:vc animated:YES];
 
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+
+
 @end

@@ -35,9 +35,33 @@
                              didFinishLaunchingWithOptions:launchOptions];
     
     
+    [self setAppearence];
     
+       
     return YES;
 }
+
+
+- (void)setAppearence
+{
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -6000)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    
+    
+    
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:213.0f/255.0f green:15.0f/255.0f blue:17.0f/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    
+    // [[UIWindow appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor],NSFontAttributeName : [UIFont fontWithName:@"Comfortaa" size:20]}];
+    [UINavigationBar appearance].translucent = NO;
+}
+
 
 
 - (BOOL)application:(UIApplication *)application

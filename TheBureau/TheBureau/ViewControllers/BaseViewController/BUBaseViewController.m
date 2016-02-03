@@ -22,8 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBarHidden = YES;
-  //  [self setNavBarLogo];
+   // self.navigationController.navigationBarHidden = YES;
+    [self setNavBarLogo];
+  //[self setAppearence];
 }
 
 - (void)setNavBarLogo {
@@ -38,6 +39,7 @@
     logo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
     [self.navigationController.navigationBar addSubview:logo];
 }
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -34,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    // _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:dgt];
+    self.title = @"login";
     _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
     _configuration.appearance = [self makeTheme];
 
@@ -66,7 +67,7 @@
 */
 -(void)viewWillAppear:(BOOL)animated{
     
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBarHidden = NO;
 
     
 }

@@ -59,8 +59,19 @@
     self.dateofbirthTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_dob"]];
     
     
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    [self.scrollview addGestureRecognizer:gestureRecognizer];
+
+    
     
     // Do any additional setup after loading the view.
+}
+
+
+- (void) hideKeyboard {
+    
+    [self.currentTextField resignFirstResponder];
+    
 }
 
 

@@ -126,16 +126,16 @@
 {
     NSString *femaleImgName,*maleImgName,*genderImgName;
     
-    if(0 == self.genderSelectionBtn.tag)
+    if(1 == self.genderSelectionBtn.tag)
     {
         femaleImgName = @"ic_female_s2.png";
         maleImgName = @"ic_male_s1.png";
         genderImgName = @"switch_female.png";
-        self.genderSelectionBtn.tag = 1;
+        self.genderSelectionBtn.tag = 0;
     }
     else
     {
-        self.genderSelectionBtn.tag = 0;
+        self.genderSelectionBtn.tag = 1;
         femaleImgName = @"ic_female_s1.png";
         maleImgName = @"ic_male_s2.png";
         genderImgName = @"switch_male.png";

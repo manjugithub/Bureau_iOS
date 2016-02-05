@@ -1819,6 +1819,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="educationlevelLbl" destination="A6V-NG-Idf" id="AzY-ed-QYA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

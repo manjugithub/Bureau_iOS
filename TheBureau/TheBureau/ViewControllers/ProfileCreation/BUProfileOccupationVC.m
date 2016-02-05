@@ -10,7 +10,7 @@
 #import "EmployementStatusTVCell.h"
 #import "HighLevelEducationTVCell.h"
 
-@interface BUProfileOccupationVC ()<UITableViewDataSource,UITableViewDelegate, HighLevelEducationTVCellDelegate,EmployementStatusTVCellDelegate>
+@interface BUProfileOccupationVC ()<UITableViewDataSource,UITableViewDelegate, HighLevelEducationTVCellDelegate,EmployementStatusTVCellDelegate,UIActionSheetDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -18,6 +18,10 @@
 @property (nonatomic) NSInteger tableViewDataSource;
 @property (nonatomic) CGFloat employementTVCellHeight;
 @property (nonatomic) CGFloat highLevelEducationTVCellHeight;
+
+@property(nonatomic) NSArray *educationLevelArray;
+
+@property(nonatomic) NSIndexPath *selectedIndexpath;
 
 
 @end
@@ -29,6 +33,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.title = @"Occupation";
+    
+    _educationLevelArray = [[NSArray alloc]initWithObjects:@"Post Graduate",@"Bachelor's",@"12th",@"10th", nil];
     [self loadUI];
     [self loadData];
 }
@@ -79,6 +87,7 @@
     {
         static NSString *educationCellIdentifier = @"HighLevelEducationTVCell";
         HighLevelEducationTVCell *cell = [tableView dequeueReusableCellWithIdentifier:educationCellIdentifier];
+        cell.indexpath = indexPath;
         cell.delegate = self;
         cellToReturn = cell;
     }
@@ -111,10 +120,12 @@
     [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
-- (void)updateHighLevelEducationTVCell
+- (void)updateHighLevelEducationTVCell:(NSIndexPath *)indexpath
 {
+    self.selectedIndexpath = indexpath;
     self.highLevelEducationTVCellHeight = 387.0;
     [self.tableView reloadData];
+    [self selectEducationLevel];
 }
 
 #pragma mark - EmployementStatusTVCellDelegate
@@ -140,7 +151,27 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)selectEducationLevel{
+UIActionSheet *acSheet = [[UIActionSheet alloc] initWithTitle:@"Select Education Level" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: nil];
 
+for (NSString *str in _educationLevelArray)
+{
+    [acSheet addButtonWithTitle:str];
+}
+
+[acSheet showInView:self.view];
+
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex != 0)
+    {
+HighLevelEducationTVCell *cell =(HighLevelEducationTVCell*) [_tableView cellForRowAtIndexPath:_selectedIndexpath];
+        
+        cell.educationlevelLbl.text = _educationLevelArray[buttonIndex - 1];
+    }
+}
 
 -(IBAction)continueClicked:(id)sender
 {

@@ -27,6 +27,8 @@
 		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; };
 		5B2A2CB41C182D7D006F3845 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */; };
 		5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */; };
+		5BB683501C64A58E0043C4FC /* EmployementStatusTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6834D1C64A58E0043C4FC /* EmployementStatusTVCell.m */; settings = {ASSET_TAGS = (); }; };
+		5BB683511C64A58E0043C4FC /* HighLevelEducationTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6834F1C64A58E0043C4FC /* HighLevelEducationTVCell.m */; settings = {ASSET_TAGS = (); }; };
 		5BDA47201C22596200C875AB /* BURootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA471F1C22596200C875AB /* BURootViewController.m */; };
 		698EA826EC5D060CB3D2F628 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FF08703B9A2468AB539B6 /* libPods.a */; };
 		7846225E1C0711E100EA589C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846225D1C0711E100EA589C /* main.m */; };
@@ -126,6 +128,10 @@
 		5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DigitsKit.framework; path = Pods/DigitsKit.framework; sourceTree = SOURCE_ROOT; };
 		5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = Pods/DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = SOURCE_ROOT; };
 		5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = Pods/TwitterKit/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		5BB6834C1C64A58E0043C4FC /* EmployementStatusTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployementStatusTVCell.h; sourceTree = "<group>"; };
+		5BB6834D1C64A58E0043C4FC /* EmployementStatusTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployementStatusTVCell.m; sourceTree = "<group>"; };
+		5BB6834E1C64A58E0043C4FC /* HighLevelEducationTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighLevelEducationTVCell.h; sourceTree = "<group>"; };
+		5BB6834F1C64A58E0043C4FC /* HighLevelEducationTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighLevelEducationTVCell.m; sourceTree = "<group>"; };
 		5BDA471E1C22596200C875AB /* BURootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BURootViewController.h; sourceTree = "<group>"; };
 		5BDA471F1C22596200C875AB /* BURootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BURootViewController.m; sourceTree = "<group>"; };
 		6502757F3F1ACF97331C1C80 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -482,6 +488,10 @@
 				78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */,
 				78B5B72E1C56792000E3C531 /* BUProfileLegalStatusVC.h */,
 				78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */,
+				5BB6834C1C64A58E0043C4FC /* EmployementStatusTVCell.h */,
+				5BB6834D1C64A58E0043C4FC /* EmployementStatusTVCell.m */,
+				5BB6834E1C64A58E0043C4FC /* HighLevelEducationTVCell.h */,
+				5BB6834F1C64A58E0043C4FC /* HighLevelEducationTVCell.m */,
 			);
 			path = ProfileCreation;
 			sourceTree = "<group>";
@@ -808,6 +818,7 @@
 				78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */,
 				5BDA47201C22596200C875AB /* BURootViewController.m in Sources */,
 				78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */,
+				5BB683501C64A58E0043C4FC /* EmployementStatusTVCell.m in Sources */,
 				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
 				78B5B72C1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */,
 				78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */,
@@ -822,6 +833,7 @@
 				5B1629181C5F62270034FA33 /* FLKAutoLayoutPredicateList.m in Sources */,
 				78B5B7241C56789E00E3C531 /* BUProfileDetailsVC.m in Sources */,
 				5B1628871C4CFE400034FA33 /* UIImage+animatedGIF.m in Sources */,
+				5BB683511C64A58E0043C4FC /* HighLevelEducationTVCell.m in Sources */,
 				78B5B7301C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */,
 				5B1628841C4CFA620034FA33 /* BUSplashViewController.m in Sources */,
 				5B1629191C5F62270034FA33 /* NSLayoutConstraint+FLKAutoLayoutDebug.m in Sources */,

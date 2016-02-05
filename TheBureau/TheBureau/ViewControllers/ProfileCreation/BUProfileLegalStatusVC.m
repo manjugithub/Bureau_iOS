@@ -8,6 +8,7 @@
 
 #import "BUProfileLegalStatusVC.h"
 
+
 @interface BUProfileLegalStatusVC ()
 
 @end

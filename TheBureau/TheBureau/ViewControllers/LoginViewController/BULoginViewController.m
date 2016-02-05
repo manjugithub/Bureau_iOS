@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    // _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:dgt];
-    self.title = @"   login  ";
+    self.title = @"login";
     _configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
     _configuration.appearance = [self makeTheme];
 

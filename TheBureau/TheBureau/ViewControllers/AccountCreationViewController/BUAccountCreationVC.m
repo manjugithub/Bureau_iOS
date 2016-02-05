@@ -82,16 +82,23 @@
     self.navigationController.navigationBarHidden = NO;
     
     [self.scrollview setContentOffset:CGPointZero animated:YES];
- 
-    self.firstNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.firstName != nil ? self.socialChannel.profileDetails.firstName : @""];
     
-    self.lastNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.lastName != nil ? self.socialChannel.profileDetails.lastName : @""];
-    
-    self.emailIdTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.emailID];
-    
-    self.mobileNumTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.mobileNumber];
-    
-    self.dateofbirthTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.dob != nil ? self.socialChannel.profileDetails.dob : @""];
+    if (self.socialChannel.profileDetails.firstName != nil) {
+        self.firstNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.firstName];
+    }
+    if (self.socialChannel.profileDetails.lastName != nil) {
+        self.lastNameTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.lastName];
+    }
+    if (self.socialChannel.emailID != nil) {
+        self.emailIdTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.emailID];
+    }
+    if (self.socialChannel.mobileNumber != nil) {
+        self.mobileNumTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.mobileNumber];
+
+    }
+    if (self.socialChannel.profileDetails.dob != nil) {
+        self.dateofbirthTF.text = [NSString stringWithFormat:@" %@",self.socialChannel.profileDetails.dob];
+    }
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -145,9 +152,33 @@
 }
 -(IBAction)signUpBtnClicked:(id)sender
 {
+    
+    if (![self.firstNameTF.text length]) {
+        [self alertMessage:@"First Name"];
+        }
+    else if (![self.lastNameTF.text length]){
+        [self alertMessage:@"Last Name"];
+    }
+    else if (![self.dateofbirthTF.text length]){
+        
+        [self alertMessage:@"Date Of Birth"];
+    }
+    else if (![self.mobileNumTF.text length]){
+        [self alertMessage:@"Mobile Number"];
+        
+    }
+    else if (![self.emailIdTF.text length]){
+        
+        [self alertMessage:@"Email Address"];
+        
+    }
+    else {
+    
     UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
     BUProfileSelectionVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileSelectionVC"];
     [self.navigationController pushViewController:vc animated:YES];
+        
+    }
     
 }
 
@@ -278,5 +309,18 @@
     [self.currentTextField resignFirstResponder];
     
     return YES;
+}
+
+
+-(void)alertMessage : (NSString *)message
+{
+    
+    
+    [[[UIAlertView alloc] initWithTitle:@"Alert"
+                                message:[NSString stringWithFormat:@"Please Enter %@",message]
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
+
 }
 @end

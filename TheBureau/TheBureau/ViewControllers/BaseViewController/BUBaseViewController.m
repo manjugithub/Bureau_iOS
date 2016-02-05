@@ -23,22 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    // self.navigationController.navigationBarHidden = YES;
-    [self setNavBarLogo];
-  //[self setAppearence];
+    
+      self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
-- (void)setNavBarLogo {
-    
-    [self setNeedsStatusBarAppearanceUpdate];
-    
-    CGRect myImageS = CGRectMake(0, 0, 44, 44);
-    UIImageView *logo = [[UIImageView alloc] initWithFrame:myImageS];
-    [logo setImage:[UIImage imageNamed:@"logo44"]];
-    logo.contentMode = UIViewContentModeScaleAspectFit;
-    logo.center = CGPointMake(self.navigationController.navigationBar.frame.size.width - logo.frame.size.width, self.navigationController.navigationBar.frame.size.height / 2.0);
-    logo.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-    [self.navigationController.navigationBar addSubview:logo];
-}
+
 
 
 

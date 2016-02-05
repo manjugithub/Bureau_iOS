@@ -13,6 +13,8 @@
 @interface BUProfileSelectionVC ()<UIActionSheetDelegate>
 @property(nonatomic,weak) IBOutlet UITextField *firstNameTF;
 @property(nonatomic,weak) IBOutlet UITextField *lastNameTF;
+@property(nonatomic)IBOutlet UITextField *currentTextField;
+
 @property (weak, nonatomic) IBOutlet UILabel *relationLabel;
 
 @property(nonatomic,strong)NSArray* relationCircle;
@@ -40,10 +42,20 @@
     self.lastNameTF.leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_user"]];
     // Do any additional setup after loading the view.
     
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    [self.view addGestureRecognizer:gestureRecognizer];
+
     
    // [self.navigationController setNavigationBarHidden:NO];
 
 }
+
+- (void) hideKeyboard {
+    
+    [self.currentTextField resignFirstResponder];
+    
+}
+
 
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -103,6 +115,9 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     
+    
+    self.currentTextField = textField;
+
     [textField resignFirstResponder];
     
     return YES;

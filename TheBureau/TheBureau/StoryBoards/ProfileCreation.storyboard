@@ -233,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyf-k3-RDz">
-                                <rect key="frame" x="20" y="309" width="560" height="130"/>
+                                <rect key="frame" x="20" y="280" width="560" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maritial status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFp-Pn-hiI">
                                         <rect key="frame" x="8" y="15" width="247" height="20"/>
@@ -343,7 +343,7 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaF-lb-b4O">
-                                <rect key="frame" x="20" y="209" width="560" height="50"/>
+                                <rect key="frame" x="20" y="180" width="560" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LI-NW-8EX">
                                         <rect key="frame" x="275" y="15" width="10" height="20"/>
@@ -400,7 +400,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlf-mT-LRF">
-                                <rect key="frame" x="20" y="159" width="560" height="50"/>
+                                <rect key="frame" x="20" y="130" width="560" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country residing in" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="xUq-gS-gch">
                                         <rect key="frame" x="8" y="15" width="247" height="20"/>
@@ -469,7 +469,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrS-GJ-4gv">
-                                <rect key="frame" x="20" y="59" width="560" height="50"/>
+                                <rect key="frame" x="20" y="30" width="560" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKA-fD-aGf">
                                         <rect key="frame" x="288" y="9" width="145" height="32"/>
@@ -550,7 +550,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKk-bG-o0k">
-                                <rect key="frame" x="20" y="109" width="560" height="50"/>
+                                <rect key="frame" x="20" y="80" width="560" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekr-Sd-40g">
                                         <rect key="frame" x="8" y="15" width="247" height="20"/>
@@ -621,7 +621,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-hb-75o">
-                                <rect key="frame" x="20" y="259" width="560" height="50"/>
+                                <rect key="frame" x="20" y="230" width="560" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6X-Wf-hFs">
                                         <rect key="frame" x="8" y="15" width="247" height="20"/>
@@ -692,7 +692,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="( All fields are mandatory )" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnD-om-Uva">
-                                <rect key="frame" x="192" y="458" width="217" height="21"/>
+                                <rect key="frame" x="192" y="429" width="217" height="21"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="217" id="5Ps-Wx-go5"/>
@@ -743,7 +743,7 @@
                             <constraint firstItem="mnD-om-Uva" firstAttribute="centerY" secondItem="dya-Ks-hDE" secondAttribute="centerY" id="nGd-Da-4ls"/>
                             <constraint firstItem="FJO-BG-u9d" firstAttribute="leading" secondItem="dya-Ks-hDE" secondAttribute="leading" id="noC-bF-dlQ"/>
                             <constraint firstAttribute="trailing" secondItem="FJO-BG-u9d" secondAttribute="trailing" id="o2E-B0-czc"/>
-                            <constraint firstItem="BrS-GJ-4gv" firstAttribute="top" secondItem="Jhm-Zr-3gQ" secondAttribute="bottom" constant="39" id="qYP-Ne-DmI"/>
+                            <constraint firstItem="BrS-GJ-4gv" firstAttribute="top" secondItem="Jhm-Zr-3gQ" secondAttribute="bottom" constant="10" id="qYP-Ne-DmI"/>
                             <constraint firstItem="QaF-lb-b4O" firstAttribute="leading" secondItem="dya-Ks-hDE" secondAttribute="leading" constant="20" id="rko-0o-wZB"/>
                             <constraint firstItem="mnD-om-Uva" firstAttribute="top" secondItem="Gyf-k3-RDz" secondAttribute="bottom" constant="19" id="sip-K4-pBx"/>
                             <constraint firstItem="xnS-hb-75o" firstAttribute="top" secondItem="QaF-lb-b4O" secondAttribute="bottom" id="sq3-fh-D53"/>

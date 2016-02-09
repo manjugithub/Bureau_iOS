@@ -27,7 +27,7 @@
 
 - (IBAction)HighLevelEducationButtonTapped:(id)sender
 {
-    [self.delegate updateHighLevelEducationTVCell];
+    [self.delegate updateHighLevelEducationTVCell :_indexpath];
 }
 
 @end

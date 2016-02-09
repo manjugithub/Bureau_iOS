@@ -11,7 +11,7 @@
 @protocol HighLevelEducationTVCellDelegate <NSObject>
 
 -(void)addNextLevelButtonTapped;
-- (void)updateHighLevelEducationTVCell;
+- (void)updateHighLevelEducationTVCell : (NSIndexPath *)indexpath;
 
 
 @end
@@ -19,5 +19,9 @@
 @interface HighLevelEducationTVCell : UITableViewCell
 
 @property (nonatomic,assign) id <HighLevelEducationTVCellDelegate> delegate;
+@property(nonatomic) NSIndexPath *indexpath;
+
+@property (nonatomic,weak) IBOutlet UILabel *educationlevelLbl;
+
 
 @end

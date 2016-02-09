@@ -1693,6 +1693,9 @@
                                                 <constraint firstItem="Xcr-HF-n5C" firstAttribute="top" secondItem="Yuo-g3-a2C" secondAttribute="top" id="yxI-Y2-Rcq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="educationlevelLbl" destination="A6V-NG-Idf" id="AzY-ed-QYA"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

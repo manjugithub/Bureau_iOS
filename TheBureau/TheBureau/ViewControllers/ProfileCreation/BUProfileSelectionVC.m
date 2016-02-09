@@ -76,7 +76,7 @@
     
     
     
-    UIActionSheet *acSheet = [[UIActionSheet alloc] initWithTitle:@"Select relationship with patient" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: nil];
+    UIActionSheet *acSheet = [[UIActionSheet alloc] initWithTitle:@"Select Relationship" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: nil];
     
     for (NSString *str in _relationCircle)
     {
@@ -107,11 +107,42 @@
 
 -(IBAction)continueClicked:(id)sender
 {
-    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
-    BUProfileDetailsVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileDetailsVC"];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    if (![self.firstNameTF.text length])
+    {
+        [self alertMessage:@"First Name"];
+    }
+    else if (![self.lastNameTF.text length])
+    {
+        [self alertMessage:@"Last Name"];
+    }
+    else if (![self.relationLabel.text length])
+    {
+        [self alertMessage:@"Relation"];
+    }
+      else
+      {
+        
+          UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
+          BUProfileDetailsVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileDetailsVC"];
+          [self.navigationController pushViewController:vc animated:YES];
+        
+    }
 
+   
 }
+    
+    -(void)alertMessage : (NSString *)message
+    {
+        
+        
+        [[[UIAlertView alloc] initWithTitle:@"Alert"
+                                    message:[NSString stringWithFormat:@"Please Enter %@",message]
+                                   delegate:nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil] show];
+        
+    }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     

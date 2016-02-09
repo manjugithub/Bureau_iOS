@@ -13,6 +13,7 @@
 #import "BUAuthButton.h"
 #import <DigitsKit/DigitsKit.h>
 #import "BUAccountCreationVC.h"
+#import "BUHomeTabbarController.h"
 @interface BULoginViewController ()
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *overLayViewTapConstraint;
@@ -213,10 +214,16 @@
                                                            style:UIAlertActionStyleDefault
                                                          handler:^(UIAlertAction *action)
                                    {
-                                       UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                                       BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
-                                       vc.socialChannel = self.socialChannel;
+                                       
+                                       
+                                       UIStoryboard *sb =[UIStoryboard storyboardWithName:@"HomeView" bundle:nil];
+                                       BUHomeTabbarController *vc = [sb instantiateViewControllerWithIdentifier:@"BUHomeTabbarController"];
                                        [self.navigationController pushViewController:vc animated:YES];
+//
+//                                       UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//                                       BUAccountCreationVC *vc = [sb instantiateViewControllerWithIdentifier:@"AccountCreationVC"];
+//                                       vc.socialChannel = self.socialChannel;
+//                                       [self.navigationController pushViewController:vc animated:YES];
                                    }];
         
         [alertController addAction:okAction];

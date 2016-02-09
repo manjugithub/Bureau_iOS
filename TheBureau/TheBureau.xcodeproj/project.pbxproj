@@ -27,8 +27,8 @@
 		5B2A2CB31C182D7D006F3845 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A2CB01C182D7D006F3845 /* DigitsKit.framework */; };
 		5B2A2CB41C182D7D006F3845 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB11C182D7D006F3845 /* DigitsKitResources.bundle */; };
 		5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B2A2CB21C182D7D006F3845 /* TwitterKitResources.bundle */; };
-		5BB683501C64A58E0043C4FC /* EmployementStatusTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6834D1C64A58E0043C4FC /* EmployementStatusTVCell.m */; settings = {ASSET_TAGS = (); }; };
-		5BB683511C64A58E0043C4FC /* HighLevelEducationTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6834F1C64A58E0043C4FC /* HighLevelEducationTVCell.m */; settings = {ASSET_TAGS = (); }; };
+		5BB683501C64A58E0043C4FC /* EmployementStatusTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6834D1C64A58E0043C4FC /* EmployementStatusTVCell.m */; };
+		5BB683511C64A58E0043C4FC /* HighLevelEducationTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6834F1C64A58E0043C4FC /* HighLevelEducationTVCell.m */; };
 		5BDA47201C22596200C875AB /* BURootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA471F1C22596200C875AB /* BURootViewController.m */; };
 		698EA826EC5D060CB3D2F628 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FF08703B9A2468AB539B6 /* libPods.a */; };
 		7846225E1C0711E100EA589C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846225D1C0711E100EA589C /* main.m */; };
@@ -52,6 +52,14 @@
 		78B5B72D1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */; };
 		78B5B7301C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */; };
 		78B5B7311C56792000E3C531 /* BUProfileLegalStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */; };
+		78BF55101C686F9400B5F1A4 /* BUHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF550F1C686F9400B5F1A4 /* BUHomeViewController.m */; };
+		78BF55121C68701000B5F1A4 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BF55111C68701000B5F1A4 /* HomeView.storyboard */; };
+		78BF55151C68739000B5F1A4 /* BUHomeTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF55141C68739000B5F1A4 /* BUHomeTabbarController.m */; };
+		78BF551A1C68789E00B5F1A4 /* BUHomeImagePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF55191C68789E00B5F1A4 /* BUHomeImagePreviewCell.m */; };
+		78BF551D1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF551C1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.m */; };
+		78BF55241C688E8D00B5F1A4 /* BUAcountsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF55231C688E8D00B5F1A4 /* BUAcountsTabViewController.m */; };
+		78CE0CFA1C69BC7C00FDA514 /* BUHomeCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CE0CF91C69BC7C00FDA514 /* BUHomeCollectionVC.m */; };
+		78CE0CFD1C69C23100FDA514 /* BUMatchInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CE0CFC1C69C23100FDA514 /* BUMatchInfoCell.m */; };
 		78CF17281C60979600779203 /* CustomPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CF17271C60979600779203 /* CustomPicker.storyboard */; };
 		78CF172B1C609D3C00779203 /* PWCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CF172A1C609D3C00779203 /* PWCustomPickerView.m */; };
 		78CF172F1C609D5100779203 /* PWCustomPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CF172D1C609D5100779203 /* PWCustomPickerCell.m */; };
@@ -164,6 +172,21 @@
 		78B5B72B1C5678F900E3C531 /* BUProfileOccupationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileOccupationVC.m; sourceTree = "<group>"; };
 		78B5B72E1C56792000E3C531 /* BUProfileLegalStatusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUProfileLegalStatusVC.h; sourceTree = "<group>"; };
 		78B5B72F1C56792000E3C531 /* BUProfileLegalStatusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUProfileLegalStatusVC.m; sourceTree = "<group>"; };
+		78BF550E1C686F9400B5F1A4 /* BUHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUHomeViewController.h; sourceTree = "<group>"; };
+		78BF550F1C686F9400B5F1A4 /* BUHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUHomeViewController.m; sourceTree = "<group>"; };
+		78BF55111C68701000B5F1A4 /* HomeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		78BF55131C68739000B5F1A4 /* BUHomeTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUHomeTabbarController.h; sourceTree = "<group>"; };
+		78BF55141C68739000B5F1A4 /* BUHomeTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUHomeTabbarController.m; sourceTree = "<group>"; };
+		78BF55181C68789E00B5F1A4 /* BUHomeImagePreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUHomeImagePreviewCell.h; sourceTree = "<group>"; };
+		78BF55191C68789E00B5F1A4 /* BUHomeImagePreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUHomeImagePreviewCell.m; sourceTree = "<group>"; };
+		78BF551B1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUHomeProfileImgPrevCell.h; sourceTree = "<group>"; };
+		78BF551C1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUHomeProfileImgPrevCell.m; sourceTree = "<group>"; };
+		78BF55221C688E8D00B5F1A4 /* BUAcountsTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUAcountsTabViewController.h; sourceTree = "<group>"; };
+		78BF55231C688E8D00B5F1A4 /* BUAcountsTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUAcountsTabViewController.m; sourceTree = "<group>"; };
+		78CE0CF81C69BC7C00FDA514 /* BUHomeCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUHomeCollectionVC.h; sourceTree = "<group>"; };
+		78CE0CF91C69BC7C00FDA514 /* BUHomeCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUHomeCollectionVC.m; sourceTree = "<group>"; };
+		78CE0CFB1C69C23100FDA514 /* BUMatchInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUMatchInfoCell.h; sourceTree = "<group>"; };
+		78CE0CFC1C69C23100FDA514 /* BUMatchInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUMatchInfoCell.m; sourceTree = "<group>"; };
 		78CF17271C60979600779203 /* CustomPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomPicker.storyboard; sourceTree = "<group>"; };
 		78CF17291C609D3C00779203 /* PWCustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWCustomPickerView.h; sourceTree = "<group>"; };
 		78CF172A1C609D3C00779203 /* PWCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCustomPickerView.m; sourceTree = "<group>"; };
@@ -374,6 +397,8 @@
 		784622961C0718E500EA589C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				78BF55211C688E7100B5F1A4 /* Accounts Tab */,
+				78BF550D1C686E5500B5F1A4 /* HomeViewController */,
 				78F4A93D1C0CD3DB001C76A6 /* AccountCreationViewController */,
 				78F4A93E1C0CD3DB001C76A6 /* ProfileCreation */,
 				1808029A1C079E5E00F5AEE5 /* SignUpViewController */,
@@ -432,6 +457,7 @@
 			children = (
 				78B5B71B1C5675E200E3C531 /* ProfileCreation.storyboard */,
 				78CF17271C60979600779203 /* CustomPicker.storyboard */,
+				78BF55111C68701000B5F1A4 /* HomeView.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -452,6 +478,50 @@
 				78B5B7191C561A6900E3C531 /* BUWebServicesManager.m */,
 			);
 			path = Webservices;
+			sourceTree = "<group>";
+		};
+		78BF550D1C686E5500B5F1A4 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78BF55161C68787300B5F1A4 /* CollectionViewCell */,
+				78BF55171C68787300B5F1A4 /* TableView Cells */,
+				78BF550E1C686F9400B5F1A4 /* BUHomeViewController.h */,
+				78BF550F1C686F9400B5F1A4 /* BUHomeViewController.m */,
+				78BF55131C68739000B5F1A4 /* BUHomeTabbarController.h */,
+				78BF55141C68739000B5F1A4 /* BUHomeTabbarController.m */,
+				78CE0CF81C69BC7C00FDA514 /* BUHomeCollectionVC.h */,
+				78CE0CF91C69BC7C00FDA514 /* BUHomeCollectionVC.m */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		78BF55161C68787300B5F1A4 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				78BF55181C68789E00B5F1A4 /* BUHomeImagePreviewCell.h */,
+				78BF55191C68789E00B5F1A4 /* BUHomeImagePreviewCell.m */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		78BF55171C68787300B5F1A4 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				78BF551B1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.h */,
+				78BF551C1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.m */,
+				78CE0CFB1C69C23100FDA514 /* BUMatchInfoCell.h */,
+				78CE0CFC1C69C23100FDA514 /* BUMatchInfoCell.m */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		78BF55211C688E7100B5F1A4 /* Accounts Tab */ = {
+			isa = PBXGroup;
+			children = (
+				78BF55221C688E8D00B5F1A4 /* BUAcountsTabViewController.h */,
+				78BF55231C688E8D00B5F1A4 /* BUAcountsTabViewController.m */,
+			);
+			path = "Accounts Tab";
 			sourceTree = "<group>";
 		};
 		78F4A9261C0CCC11001C76A6 /* Fonts */ = {
@@ -720,6 +790,7 @@
 				784622671C0711E100EA589C /* Main.storyboard in Resources */,
 				78F4A92C1C0CCC11001C76A6 /* Comfortaa-Regular.ttf in Resources */,
 				78B5B71C1C5675E200E3C531 /* ProfileCreation.storyboard in Resources */,
+				78BF55121C68701000B5F1A4 /* HomeView.storyboard in Resources */,
 				78CF17281C60979600779203 /* CustomPicker.storyboard in Resources */,
 				5B16288F1C4D252A0034FA33 /* ALLURA-REGULAR.TTF in Resources */,
 				5B2A2CB51C182D7D006F3845 /* TwitterKitResources.bundle in Resources */,
@@ -815,15 +886,20 @@
 				78FEE2481C07210F0013E9D2 /* NSString+Encode.m in Sources */,
 				5B0AEDCC1C23591400877C24 /* BUSignUpWithEmailVC.m in Sources */,
 				7846225E1C0711E100EA589C /* main.m in Sources */,
+				78BF55101C686F9400B5F1A4 /* BUHomeViewController.m in Sources */,
 				78FEE2331C071EAC0013E9D2 /* BUBaseViewController.m in Sources */,
+				78BF55241C688E8D00B5F1A4 /* BUAcountsTabViewController.m in Sources */,
 				5BDA47201C22596200C875AB /* BURootViewController.m in Sources */,
 				78FEE24E1C0721690013E9D2 /* BUConstants.m in Sources */,
 				5BB683501C64A58E0043C4FC /* EmployementStatusTVCell.m in Sources */,
 				78FEE2431C0720FE0013E9D2 /* UIColor+APColor.m in Sources */,
 				78B5B72C1C5678F900E3C531 /* BUProfileOccupationVC.m in Sources */,
+				78CE0CFD1C69C23100FDA514 /* BUMatchInfoCell.m in Sources */,
 				78FEE25F1C0728660013E9D2 /* FCBaseSocialController.m in Sources */,
+				78BF551D1C68790B00B5F1A4 /* BUHomeProfileImgPrevCell.m in Sources */,
 				78B5B71A1C561A6900E3C531 /* BUWebServicesManager.m in Sources */,
 				5B16291A1C5F62270034FA33 /* UIView+FLKAutoLayout.m in Sources */,
+				78BF551A1C68789E00B5F1A4 /* BUHomeImagePreviewCell.m in Sources */,
 				1808029D1C079E7B00F5AEE5 /* BUSignUpViewController.m in Sources */,
 				78CF172F1C609D5100779203 /* PWCustomPickerCell.m in Sources */,
 				5B16291C1C5F62270034FA33 /* UIView+FLKAutoLayoutPredicate.m in Sources */,
@@ -848,10 +924,12 @@
 				78FEE2391C0720B60013E9D2 /* UIKit+Extensions.m in Sources */,
 				5B1628921C4F63D10034FA33 /* BUProfileDetails.m in Sources */,
 				78FEE25E1C0728660013E9D2 /* FBController.m in Sources */,
+				78CE0CFA1C69BC7C00FDA514 /* BUHomeCollectionVC.m in Sources */,
 				78CF172B1C609D3C00779203 /* PWCustomPickerView.m in Sources */,
 				5B2A2CAE1C0CE72B006F3845 /* BUForgotPasswordVC.m in Sources */,
 				5B0AEDC91C22C69D00877C24 /* BUAuthButton.m in Sources */,
 				78F4A9411C0CD3F4001C76A6 /* BUAccountCreationVC.m in Sources */,
+				78BF55151C68739000B5F1A4 /* BUHomeTabbarController.m in Sources */,
 				5B0AEDC61C22B94A00877C24 /* BULoginWithEmailVC.m in Sources */,
 				7846226A1C0711E100EA589C /* TheBureau.xcdatamodeld in Sources */,
 			);
@@ -953,7 +1031,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "09d9c09e-c42a-4e04-995a-d67d5faedee0";
+				PROVISIONING_PROFILE = "0519258c-fc72-49a9-93d2-79ed70fc819a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -992,7 +1070,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "09d9c09e-c42a-4e04-995a-d67d5faedee0";
+				PROVISIONING_PROFILE = "0519258c-fc72-49a9-93d2-79ed70fc819a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1015,7 +1093,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bureau.bureauapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "09d9c09e-c42a-4e04-995a-d67d5faedee0";
+				PROVISIONING_PROFILE = "0519258c-fc72-49a9-93d2-79ed70fc819a";
 			};
 			name = Debug;
 		};
@@ -1035,7 +1113,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bureau.bureauapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "09d9c09e-c42a-4e04-995a-d67d5faedee0";
+				PROVISIONING_PROFILE = "0519258c-fc72-49a9-93d2-79ed70fc819a";
 			};
 			name = Release;
 		};

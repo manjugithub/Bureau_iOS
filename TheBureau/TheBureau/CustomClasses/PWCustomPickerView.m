@@ -78,6 +78,7 @@
         }
         case eMotherToungueList:
         {
+            cell.titleLabel.text = [inDataSourceDict valueForKey:@"mother_tongue"];
             break;
         }
         case eFamilyOriginList:

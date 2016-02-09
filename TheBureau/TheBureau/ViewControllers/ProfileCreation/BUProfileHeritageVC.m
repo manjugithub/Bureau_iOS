@@ -55,7 +55,10 @@
 
 -(IBAction)getMotherToungue:(id)sender
 {
-    
+    NSDictionary *parameters = nil;
+    [self startActivityIndicator:YES];
+    self.heritageList = eMotherToungueList;
+    [[BUWebServicesManager sharedManager] getMotherTongueList:self parameters:parameters];
 }
 
 -(IBAction)getSpecificationList:(id)sender
@@ -78,10 +81,13 @@
 
 -(IBAction)continueClicked:(id)sender
 {
+    
+
     UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
     BUProfileOccupationVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileOccupationVC"];
     [self.navigationController pushViewController:vc animated:YES];
     
+
 }
 -(void)didSuccess:(id)inResult
 {
@@ -113,7 +119,7 @@
         }
         case eMotherToungueList:
         {
-            
+            self.motherToungueTF.text = [inSelectedRow valueForKey:@"mother_tongue"];
             break;
         }
         case eFamilyOriginList:

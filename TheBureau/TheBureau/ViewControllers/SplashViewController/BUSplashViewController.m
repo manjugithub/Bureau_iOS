@@ -12,7 +12,7 @@
 #import "BUProfileSelectionVC.h"
 #import "BUProfileDetailsVC.h"
 #import "BUAccountCreationVC.h"
-
+#import "BUHomeTabbarController.h"
 @interface BUSplashViewController ()
 {
     
@@ -54,6 +54,12 @@
 //    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
 //    BUProfileDetailsVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileDetailsVC"];
 //    [self.navigationController pushViewController:vc animated:YES];
+    
+//    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"HomeView" bundle:nil];
+//    BUHomeTabbarController *vc = [sb instantiateViewControllerWithIdentifier:@"BUHomeTabbarController"];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

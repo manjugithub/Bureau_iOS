@@ -9,6 +9,7 @@
 #import "BUProfileOccupationVC.h"
 #import "EmployementStatusTVCell.h"
 #import "HighLevelEducationTVCell.h"
+#import "BUHomeTabbarController.h"
 
 @interface BUProfileOccupationVC ()<UITableViewDataSource,UITableViewDelegate, HighLevelEducationTVCellDelegate,EmployementStatusTVCellDelegate>
 
@@ -31,6 +32,7 @@
     [super viewDidLoad];
     [self loadUI];
     [self loadData];
+    self.title = @"Occupation";
 }
 
 - (void)didReceiveMemoryWarning
@@ -144,9 +146,14 @@
 
 -(IBAction)continueClicked:(id)sender
 {
-    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"ProfileCreation" bundle:nil];
-    BUProfileOccupationVC *vc = [sb instantiateViewControllerWithIdentifier:@"BUProfileOccupationVC"];
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"HomeView" bundle:nil];
+    BUHomeTabbarController *vc = [sb instantiateViewControllerWithIdentifier:@"BUHomeTabbarController"];
     [self.navigationController pushViewController:vc animated:YES];
     
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 @end

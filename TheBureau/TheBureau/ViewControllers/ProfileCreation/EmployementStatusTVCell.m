@@ -43,6 +43,13 @@ typedef NS_ENUM (NSInteger, EmployementStatus)
         {
             self.unemployedYConstraint.constant = UNEMPLOYEDYCONSTANTAFTERDETAILVIEW;
             self.employmentDetailView.hidden = NO;
+            
+            [self.employedBtn setSelected:YES];
+            [self.othersBtn setSelected:NO];
+            [self.unemployedBtn setSelected:NO];
+            [self.studentBtn setSelected:NO];
+
+
             [self.delegate updateEmployementCellHeightForEmployed];
 
             break;
@@ -53,8 +60,14 @@ typedef NS_ENUM (NSInteger, EmployementStatus)
             {
                 self.unemployedYConstraint.constant = UNEMPLOYEDYCONSTANTBEFOREDETAILVIEW;
                 self.employmentDetailView.hidden = YES;
+              
+
                 [self.delegate updateEmployementCellHeightForOthers];
             }
+            [self.employedBtn setSelected:NO];
+            [self.othersBtn setSelected:NO];
+            [self.unemployedBtn setSelected:YES];
+            [self.studentBtn setSelected:NO];
             break;
         }
         case EmployementStatusStudent:
@@ -63,8 +76,15 @@ typedef NS_ENUM (NSInteger, EmployementStatus)
             {
                 self.unemployedYConstraint.constant = UNEMPLOYEDYCONSTANTBEFOREDETAILVIEW;
                 self.employmentDetailView.hidden = YES;
+                
+              
+
                 [self.delegate updateEmployementCellHeightForOthers];
             }
+            [self.employedBtn setSelected:NO];
+            [self.othersBtn setSelected:NO];
+            [self.unemployedBtn setSelected:NO];
+            [self.studentBtn setSelected:YES];
             break;
         }
         case EmployementStatusOthers:
@@ -73,8 +93,14 @@ typedef NS_ENUM (NSInteger, EmployementStatus)
             {
                 self.unemployedYConstraint.constant = UNEMPLOYEDYCONSTANTBEFOREDETAILVIEW;
                 self.employmentDetailView.hidden = YES;
+                
                 [self.delegate updateEmployementCellHeightForOthers];
             }
+            [self.employedBtn setSelected:NO];
+            [self.othersBtn setSelected:YES];
+            [self.unemployedBtn setSelected:NO];
+            [self.studentBtn setSelected:NO];
+
             break;
         }
         default: break;

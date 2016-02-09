@@ -21,6 +21,14 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *unemployedYConstraint;
 
 @property (weak, nonatomic) IBOutlet UIView *employmentDetailView;
+@property (weak, nonatomic) IBOutlet UIButton *employedBtn;
+@property (weak, nonatomic) IBOutlet UIButton *unemployedBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *studentBtn;
+@property (weak, nonatomic) IBOutlet UIButton *othersBtn;
+
+
+
 
 @property (nonatomic,assign) id <EmployementStatusTVCellDelegate> delegate;
 
